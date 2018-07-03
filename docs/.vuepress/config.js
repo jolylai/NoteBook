@@ -2,6 +2,9 @@ module.exports = {
   title: "NoteBook",
   description: "🚀 前端攻城秘籍",
   base: "/notebook/",
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
   themeConfig: {
     nav: [
       {
@@ -21,9 +24,9 @@ module.exports = {
           children: ["", 'flex']
         },
       ],
-      "/css/css-secrets/": [
+      "/css-secrets/": [
         {
-          title: "CSS",
+          title: "CSS Secrets",
           collapsable: false,
           children: [""]
         },
