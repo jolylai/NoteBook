@@ -25,7 +25,9 @@ git subtree push --prefix dist origin gh-pages
 // dist 为项目的文件路径
 // git subtree push --prefix docs/.vuepress/dist origin gh-pages
 ```
+
 ## 修改远程地址
+
 ```
 git remote set-url origin <new url>
 ```
