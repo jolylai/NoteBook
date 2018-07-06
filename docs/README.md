@@ -1,6 +1,7 @@
 ---
 home: true
-actionText: 🚀 快速上手 →
+heroImage: /hero.png
+actionText: 快速上手 →
 actionLink: /css/
 features:
 - title: 简洁至上
@@ -11,3 +12,8 @@ features:
   details: 以一个点去学习以此点扩展出来的知识点。
 footer: Copyright © 2018-present Jolylai
 ---
+
+## Todo List
+
+- CSS Secret
+- 异步编程
