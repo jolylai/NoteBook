@@ -7,7 +7,7 @@ module.exports = {
     nav: [
       {
         text: "CSS",
-        items: [{ text: "CSS Secret", link: "/css-secret" }]
+        link: "/css/"
       },
       {
         text: "JavaScript",
@@ -19,13 +19,6 @@ module.exports = {
       }
     ],
     sidebar: {
-      // "/css/": [
-      //   {
-      //     title: "CSS",
-      //     collapsable: false,
-      //     children: ["", 'flex']
-      //   },
-      // ],
       "/css-secrets/": [
         {
           title: "CSS Secrets",
@@ -33,14 +26,14 @@ module.exports = {
           children: [""]
         }
       ],
-      "/javascript/": [
+      "/js-promise/": [
         {
-          title: "JavaScript",
+          title: "Promise",
           collapsable: false,
-          children: ["promise"]
+          children: ["chain-flow"]
         }
       ],
-      "/tools/": ["github-page"]
+      "/tools/": ["github-page", "deploy"]
     },
     lastUpdated: "上次更新"
   },
