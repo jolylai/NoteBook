@@ -14,25 +14,26 @@ module.exports = {
         link: "/javascript/"
       },
       {
+        text: "Nodejs",
+        link: "/nodejs/"
+      },
+      {
         text: "Tools",
         link: "/tools/"
       }
     ],
     sidebar: {
-      "/css-secrets/": [
+      "/css/": [
+        { title: "css", collapsable: false, children: ["", "background"] }
+      ],
+      "/javascript/": [
         {
-          title: "CSS Secrets",
+          title: "JavaScript",
           collapsable: false,
           children: [""]
         }
       ],
-      "/js-promise/": [
-        {
-          title: "Promise",
-          collapsable: false,
-          children: ["chain-flow"]
-        }
-      ],
+      "/nodejs": [""],
       "/tools/": ["github-page", "deploy"]
     },
     lastUpdated: "上次更新"
