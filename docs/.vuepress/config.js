@@ -33,7 +33,7 @@ module.exports = {
           children: ["chain-flow"]
         }
       ],
-      "/tools/": ["github-page", "deploy"]
+      "/tools/": ["github", "github-page", "deploy"]
     },
     lastUpdated: "上次更新"
   },
