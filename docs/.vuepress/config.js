@@ -30,7 +30,7 @@ module.exports = {
         {
           title: "JavaScript",
           collapsable: false,
-          children: [""]
+          children: ["", "generator"]
         }
       ],
       "/nodejs": [""],
