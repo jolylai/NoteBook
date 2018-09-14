@@ -6,7 +6,7 @@
 
 ## 目录
 
-- [Promise](../js-promise/README.md)
+- [Promise]()
 
 ## Github 上值得一看和学习的 js 库
 
