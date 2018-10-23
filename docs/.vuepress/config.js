@@ -24,13 +24,17 @@ module.exports = {
     ],
     sidebar: {
       "/css/": [
-        { title: "css", collapsable: false, children: ["", "background"] }
+        {
+          title: "css",
+          collapsable: false,
+          children: ["", "background", "selector"]
+        }
       ],
       "/javascript/": [
         {
           title: "JavaScript",
           collapsable: false,
-          children: [""]
+          children: ["", "generator", "array", "call-apply-bind"]
         }
       ],
       "/nodejs": [""],
