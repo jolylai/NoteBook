@@ -178,6 +178,64 @@ const countOccurrences = (arr, value) =>
 // countOccurrences([1,1,2,1,2,3], 1) -> 3
 ```
 
+## deepFlatten
+
+将数组扁平化
+
+```js
+const deepFlatten = arr =>
+  [].concat(...arr.map(v => (Array.isArray(v) ? deepFlatten(v) : v)));
+
+// deepFlatten([1,[2],[[3],4],5]) -> [1,2,3,4,5]
+```
+
+::: tip
+
+- `[].concat(1, [2]) -> [1, 2]` `[].concat([1, [2]]) -> [1, [2]]`
+- arr 为 `[1, [2]]` arr.map 返回的值为 `[1, [2]]`, 所有要...arr.map
+- 化简为将 `[1, [2]]` 数组扁平化，然后递归
+- :::
+
+## dropElements
+
+去除掉数组的第一个元素，直到 func 返回为 true
+
+```js
+const dropElements = (arr, func) => {
+  while (arr.length > 0 && !func(arr[0])) arr.shift();
+  return arr;
+};
+
+// dropElements([1, 2, 3, 4], n => n >= 3) -> [3,4]
+```
+
+## fillArray
+
+一个固定值填充一个数组中从起始索引到终止索引内的全部元素。不包括终止索引。
+
+```js
+const fillArray = (arr, value, start = 0, end = arr.length) =>
+  arr.map((v, i) => (i >= start && i < end ? value : v));
+
+// fillArray([1,2,3,4],'8',1,3) -> [1,'8','8',4]
+```
+
+::: tip
+
+- Array.fill(value[, start[, end]])
+  :::
+
+## filterNonUnique
+
+过滤掉数组中非唯一的值
+
+```js
+const filterNonUnique = arr =>
+  arr.filter(i => arr.indexOf(i) === arr.lastIndexOf(i));
+
+// filterNonUnique([1,2,2,3,4,4,5]) -> [1,3,5]
+```
+
 ## take
 
 获取数组中从第一位开始的前 n 个元素
@@ -199,5 +257,5 @@ const unique = arr => [...new Set(arr)];
 
 ::: tip
 
-使用 ES6 中是 _Set_ 和 _..._ 去除掉重复的值
+使用 ES6 中是 `Set` 和 `...` 去除掉重复的值
 :::
