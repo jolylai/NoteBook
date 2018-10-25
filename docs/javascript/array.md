@@ -32,8 +32,33 @@ const difference = (a, b) => {
   const s = new Set(b);
   return a.filter(x => !s.has(x));
 };
+
 // difference([1,2,3], [1,2]) -> [3]
 ```
+
+## differenceBy
+
+```js
+const differenceBy = (a, b, fn) => {
+  const s = new Set(b.map(fn));
+  return a.filter(x => !s.has(fn(x)));
+};
+
+// differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor); -> [1.2]
+// differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); -> [ { x: 2 } ]
+```
+
+## differenceWith ⭐️
+
+```js
+const differenceWith = (arr, val, comp) =>
+  arr.filter(a => val.findIndex(b => comp(a, b)) === -1);
+```
+
+::: tip
+
+- [Array.findIndex](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)
+  :::
 
 ## include
 
@@ -165,6 +190,8 @@ const chunk = (arr, size) =>
 
 ```js
 const compact = arr => arr.filter(v => v);
+const compact = arr => arr.filter(Boolean);
+
 // compact([0, 1, false, 2, '', 3, 'a', 'e'*23, NaN, 's', 34]) -> [ 1, 2, 3, 'a', 's', 34 ]
 ```
 
@@ -259,3 +286,49 @@ const unique = arr => [...new Set(arr)];
 
 使用 ES6 中是 `Set` 和 `...` 去除掉重复的值
 :::
+
+## all
+
+```js
+const all = (arr, fn = Boolean) => arr.every(fn);
+
+all([4, 2, 3], x => x > 1); // true
+all([1, 2, 3]); // true
+```
+
+::: tip
+
+- fn 默认为 [Boolean](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+  :::
+
+## bifurcate
+
+```js
+const bifurcate = (arr, filter) =>
+  arr.reduce((acc, val, i) => (acc[filter[i] ? 0 : 1].push(val), acc), [
+    [],
+    []
+  ]);
+```
+
+::: tip
+
+- 返回值 `(acc[filter[i] ? 0 : 1].push(val), acc)`, 将对象中的值改变并返回这个对象
+  :::
+
+## countBy
+
+将数组的元素分类型计算其个数
+
+```js
+const countBy = (arr, fn) =>
+  arr.map(typeof fn === "function" ? fn : val => val[fn]).reduce((acc, val) => {
+    acc[val] = (acc[val] || 0) + 1;
+    return acc;
+  }, {});
+```
+
+::: tip
+
+- `typeof fn === 'function'` 检验传入的参数是否为函数
+  :::

@@ -15,6 +15,7 @@ footer: Copyright © 2018-present Jolylai
 
 ## Todo List
 
+- [30 seconds of code](https://30secondsofcode.org/)
 - CSS Secret
 - 异步编程
 - happy-little-stack
