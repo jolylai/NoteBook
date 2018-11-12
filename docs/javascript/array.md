@@ -53,6 +53,8 @@ const differenceBy = (a, b, fn) => {
 ```js
 const differenceWith = (arr, val, comp) =>
   arr.filter(a => val.findIndex(b => comp(a, b)) === -1);
+
+// differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Math.round(b)); -> [1, 1.2]
 ```
 
 ::: tip
@@ -65,6 +67,7 @@ const differenceWith = (arr, val, comp) =>
 ```js
 const includes = (collection, val, fromIndex = 0) =>
   collection.slice(fromIndex).indexOf(val) != -1;
+
 // includes("30-seconds-of-code", "code") -> true
 // includes([1, 2, 3, 4], [1, 2], 1) -> false
 ```
@@ -261,6 +264,24 @@ const filterNonUnique = arr =>
   arr.filter(i => arr.indexOf(i) === arr.lastIndexOf(i));
 
 // filterNonUnique([1,2,2,3,4,4,5]) -> [1,3,5]
+```
+
+## filterNonUniqueBy 💯
+
+```js
+const filterNonUniqueBy = (arr, fn) =>
+  arr.filter((v, i) => arr.every((x, j) => (i === j) === fn(v, x, i, j)));
+
+//   filterNonUniqueBy(
+//   [
+//     { id: 0, value: 'a' },
+//     { id: 1, value: 'b' },
+//     { id: 2, value: 'c' },
+//     { id: 1, value: 'd' },
+//     { id: 0, value: 'e' }
+//   ],
+//   (a, b) => a.id == b.id
+// ); -> [ { id: 2, value: 'c' } ]
 ```
 
 ## take

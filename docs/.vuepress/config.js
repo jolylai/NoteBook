@@ -14,9 +14,13 @@ module.exports = {
         link: "/javascript/"
       },
       {
-        text: "Nodejs",
-        link: "/nodejs/"
+        text: "Zent",
+        link: "/zent/"
       },
+      // {
+      //   text: "Nodejs",
+      //   link: "/nodejs/"
+      // },
       {
         text: "Tools",
         link: "/tools/"
@@ -35,6 +39,13 @@ module.exports = {
           title: "JavaScript",
           collapsable: false,
           children: ["", "generator", "array", "call-apply-bind"]
+        }
+      ],
+      "/zent/": [
+        {
+          title: "zent",
+          collapsable: false,
+          children: ["", "affix"]
         }
       ],
       "/nodejs": [""],
