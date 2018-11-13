@@ -49,7 +49,7 @@ module.exports = {
         }
       ],
       "/nodejs": [""],
-      "/tools/": ["github-page", "deploy"]
+      "/tools/": ["resource", "github-page", "deploy"]
     },
     lastUpdated: "上次更新"
   },
