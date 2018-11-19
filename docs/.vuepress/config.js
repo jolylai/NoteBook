@@ -17,6 +17,10 @@ module.exports = {
         text: "Zent",
         link: "/zent/"
       },
+      {
+        text: "React",
+        link: "/react/"
+      },
       // {
       //   text: "Nodejs",
       //   link: "/nodejs/"
@@ -46,6 +50,13 @@ module.exports = {
           title: "zent",
           collapsable: false,
           children: ["", "affix"]
+        }
+      ],
+      "/react/": [
+        {
+          title: "react",
+          collapsable: false,
+          children: ["lifecycle"]
         }
       ],
       "/nodejs": [""],
