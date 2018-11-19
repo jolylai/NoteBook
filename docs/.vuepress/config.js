@@ -35,7 +35,7 @@ module.exports = {
         {
           title: "css",
           collapsable: false,
-          children: ["", "background", "selector"]
+          children: ["", "background", "selector", "css-world-3"]
         }
       ],
       "/javascript/": [
