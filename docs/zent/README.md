@@ -18,4 +18,3 @@ Zent is a React component library developed and used at Youzan. Zent provides a 
 
 - Affix: 📅 2018-11-12 ~ 📅 2018-11-18
 - Alert: 📅 2018-11-19 ~ 📅 2018-11-25
-- Auto-Complete: 📅 2018-11-26 ~ 📅 2018-12-2

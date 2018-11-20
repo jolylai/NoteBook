@@ -25,3 +25,4 @@ footer: Copyright © 2018-present Jolylai
 - 面包屑
 - 路由守卫
 - [table 文字不换行](http://www.cnblogs.com/aimyfly/archive/2013/07/12/3186651.html)
+- [跨域](https://stackoverflow.com/questions/10636611/how-does-access-control-allow-origin-header-work)
