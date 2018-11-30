@@ -18,7 +18,6 @@ footer: Copyright © 2018-present Jolylai
 - [30 seconds of code](https://30secondsofcode.org/)
 - CSS Secret
 - 异步编程
-- happy-little-stack
 - umi + [mdx](https://github.com/mdx-js/mdx) + [react-live](https://github.com/FormidableLabs/react-live)
 - Nodejs
 - 滚动条

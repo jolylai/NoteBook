@@ -60,7 +60,13 @@ module.exports = {
         }
       ],
       "/nodejs": [""],
-      "/tools/": ["resource", "github-page", "deploy"]
+      "/tools/": [
+        {
+          title: "tools",
+          collapsable: false,
+          children: ["", "start", "deploy"]
+        }
+      ]
     },
     lastUpdated: "上次更新"
   },

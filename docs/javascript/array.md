@@ -139,6 +139,7 @@ const union = (a, b) => [...new Set([...a, ...b])];
 
 ```js
 const without = (arr, ...args) => arr.filter(v => args.indexOf(v) === -1);
+const without = (arr, ...args) => arr.filter(v => !args.includes(v));
 
 // without[2, 1, 2, 3], 1, 2) -> [3]
 // without([2, 1, 2, 3, 4, 5, 5, 5, 3, 2, 7, 7], 3, 1, 5, 2) -> [ 4, 7, 7 ]
