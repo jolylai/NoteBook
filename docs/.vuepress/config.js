@@ -13,10 +13,10 @@ module.exports = {
         text: "JavaScript",
         link: "/javascript/"
       },
-      {
-        text: "Zent",
-        link: "/zent/"
-      },
+      // {
+      //   text: "Zent",
+      //   link: "/zent/"
+      // },
       {
         text: "React",
         link: "/react/"
@@ -42,16 +42,16 @@ module.exports = {
         {
           title: "JavaScript",
           collapsable: false,
-          children: ["", "generator", "array", "call-apply-bind"]
+          children: ["", "array", "utils"]
         }
       ],
-      "/zent/": [
-        {
-          title: "zent",
-          collapsable: false,
-          children: ["", "affix"]
-        }
-      ],
+      // "/zent/": [
+      //   {
+      //     title: "zent",
+      //     collapsable: false,
+      //     children: ["", "affix"]
+      //   }
+      // ],
       "/react/": [
         {
           title: "react",
@@ -62,9 +62,9 @@ module.exports = {
       "/nodejs": [""],
       "/tools/": [
         {
-          title: "tools",
+          title: "Tools",
           collapsable: false,
-          children: ["", "start", "deploy"]
+          children: ["", "npm", "deploy"]
         }
       ]
     },

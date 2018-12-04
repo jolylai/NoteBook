@@ -13,9 +13,12 @@ features:
 footer: Copyright © 2018-present Jolylai
 ---
 
-## Todo List
+## Learning
 
 - [30 seconds of code](https://30secondsofcode.org/)
+
+## Todo List
+
 - CSS Secret
 - 异步编程
 - umi + [mdx](https://github.com/mdx-js/mdx) + [react-live](https://github.com/FormidableLabs/react-live)
