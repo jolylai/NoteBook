@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>dva | NoteBook</title>
+    <meta name="description" content="🚀 前端攻城秘籍">
+    <link rel="icon" href="/notebook/favicon.ico">
+    
+    <link rel="preload" href="/notebook/assets/css/styles.b2db6342.css" as="style"><link rel="preload" href="/notebook/assets/js/app.b2db6342.js" as="script"><link rel="preload" href="/notebook/assets/js/25.fcd851de.js" as="script"><link rel="prefetch" href="/notebook/assets/js/1.0f926d52.js"><link rel="prefetch" href="/notebook/assets/js/10.5157d5bb.js"><link rel="prefetch" href="/notebook/assets/js/11.321544e3.js"><link rel="prefetch" href="/notebook/assets/js/12.2eaeb6d2.js"><link rel="prefetch" href="/notebook/assets/js/13.43afe0fb.js"><link rel="prefetch" href="/notebook/assets/js/14.be88ab5b.js"><link rel="prefetch" href="/notebook/assets/js/15.f1738d71.js"><link rel="prefetch" href="/notebook/assets/js/16.c628add0.js"><link rel="prefetch" href="/notebook/assets/js/17.f484b64f.js"><link rel="prefetch" href="/notebook/assets/js/18.2b132024.js"><link rel="prefetch" href="/notebook/assets/js/19.cf51fab3.js"><link rel="prefetch" href="/notebook/assets/js/2.93344d15.js"><link rel="prefetch" href="/notebook/assets/js/20.477da360.js"><link rel="prefetch" href="/notebook/assets/js/21.f8f8edb8.js"><link rel="prefetch" href="/notebook/assets/js/22.dc9659e3.js"><link rel="prefetch" href="/notebook/assets/js/23.77ec3e56.js"><link rel="prefetch" href="/notebook/assets/js/24.51513d82.js"><link rel="prefetch" href="/notebook/assets/js/26.de00492f.js"><link rel="prefetch" href="/notebook/assets/js/27.c762d171.js"><link rel="prefetch" href="/notebook/assets/js/28.06685cdb.js"><link rel="prefetch" href="/notebook/assets/js/29.aad06ac8.js"><link rel="prefetch" href="/notebook/assets/js/3.4976de83.js"><link rel="prefetch" href="/notebook/assets/js/30.942e2f30.js"><link rel="prefetch" href="/notebook/assets/js/31.0e0558af.js"><link rel="prefetch" href="/notebook/assets/js/32.eb1ed33f.js"><link rel="prefetch" href="/notebook/assets/js/4.47688c28.js"><link rel="prefetch" href="/notebook/assets/js/5.6635a0ad.js"><link rel="prefetch" href="/notebook/assets/js/6.59b3827e.js"><link rel="prefetch" href="/notebook/assets/js/7.622c4bea.js"><link rel="prefetch" href="/notebook/assets/js/8.f9ba1a75.js"><link rel="prefetch" href="/notebook/assets/js/9.1ab0ec42.js">
+    <link rel="stylesheet" href="/notebook/assets/css/styles.b2db6342.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/notebook/" class="home-link router-link-active"><!----><span class="site-name">
+      NoteBook
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/notebook/css/" class="nav-link">CSS</a></div><div class="nav-item"><a href="/notebook/javascript/" class="nav-link">JavaScript</a></div><div class="nav-item"><a href="/notebook/react/" class="nav-link">React</a></div><div class="nav-item"><a href="/notebook/tools/" class="nav-link router-link-active">Tools</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/notebook/css/" class="nav-link">CSS</a></div><div class="nav-item"><a href="/notebook/javascript/" class="nav-link">JavaScript</a></div><div class="nav-item"><a href="/notebook/react/" class="nav-link">React</a></div><div class="nav-item"><a href="/notebook/tools/" class="nav-link router-link-active">Tools</a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Tools</span><!----></p><ul class="sidebar-group-items"><li><a href="/notebook/tools/" class="sidebar-link">工具</a></li><li><a href="/notebook/tools/npm.html" class="sidebar-link">npm 包</a></li><li><a href="/notebook/tools/deploy.html" class="sidebar-link">项目上线</a></li><li><a href="/notebook/tools/axios.html" class="sidebar-link">axios</a></li><li><a href="/notebook/tools/dva.html" class="active sidebar-link">dva</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notebook/tools/dva.html#模板" class="sidebar-link">模板</a></li><li class="sidebar-sub-header"><a href="/notebook/tools/dva.html#subscriptions" class="sidebar-link">subscriptions</a></li><li class="sidebar-sub-header"><a href="/notebook/tools/dva.html#扩展-modal" class="sidebar-link">扩展 modal</a></li></ul></li></ul></div></li></ul></div><div class="page"><div class="content"><h1 id="dva"><a href="#dva" aria-hidden="true" class="header-anchor">#</a> dva</h1><h2 id="模板"><a href="#模板" aria-hidden="true" class="header-anchor">#</a> 模板</h2><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> query <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;../services/login&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  namespace<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span>
+
+  state<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  subscriptions<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">{</span> dispatch<span class="token punctuation">,</span> history <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      history<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span>location <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>location<span class="token punctuation">.</span>pathname <span class="token operator">===</span> <span class="token string">&quot;/&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  effects<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">*</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token punctuation">{</span> payload <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> call<span class="token punctuation">,</span> put <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> response <span class="token operator">=</span> <span class="token keyword">yield</span> <span class="token function">call</span><span class="token punctuation">(</span>query<span class="token punctuation">,</span> payload<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  reducers<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">save</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> action<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token operator">...</span>state<span class="token punctuation">,</span> <span class="token operator">...</span>action<span class="token punctuation">.</span>payload <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><h2 id="subscriptions"><a href="#subscriptions" aria-hidden="true" class="header-anchor">#</a> subscriptions</h2><p>({ dispatch, history }, done) =&gt; unlistenFunction</p><div class="language-js line-numbers-mode"><pre class="language-js"><code>  subscriptions<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">setupHistory</span><span class="token punctuation">(</span><span class="token punctuation">{</span> dispatch<span class="token punctuation">,</span> history <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      history<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span>location <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          type<span class="token punctuation">:</span> <span class="token string">'updateState'</span><span class="token punctuation">,</span>
+          payload<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            locationPathname<span class="token punctuation">:</span> location<span class="token punctuation">.</span>pathname<span class="token punctuation">,</span>
+            locationQuery<span class="token punctuation">:</span> location<span class="token punctuation">.</span>query<span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token function">setupRequestCancel</span><span class="token punctuation">(</span><span class="token punctuation">{</span> history <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      history<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> <span class="token punctuation">{</span> cancelRequest <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span> <span class="token operator">=</span> window
+
+        cancelRequest<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>value<span class="token punctuation">,</span> key<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>value<span class="token punctuation">.</span>pathname <span class="token operator">!==</span> window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>pathname<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            value<span class="token punctuation">.</span><span class="token function">cancel</span><span class="token punctuation">(</span><span class="token constant">CANCEL_REQUEST_MESSAGE</span><span class="token punctuation">)</span>
+            cancelRequest<span class="token punctuation">.</span><span class="token keyword">delete</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">{</span> dispatch <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token punctuation">{</span> type<span class="token punctuation">:</span> <span class="token string">'query'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><div class="tip custom-block"><p class="custom-block-title">TIP</p><ul><li><code>setupHistory</code>, <code>setupRequestCancel</code>, <code>setup</code> 都会订阅，命名建议以 setup 开头</li><li>建议拆分成多个订阅，这样代码结构更加清晰</li></ul></div><h2 id="扩展-modal"><a href="#扩展-modal" aria-hidden="true" class="header-anchor">#</a> 扩展 modal</h2><p>用这种写法能大大简化 modal 中的代码</p><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> modelExtend <span class="token keyword">from</span> <span class="token string">&quot;dva-model-extend&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> model <span class="token operator">=</span> <span class="token punctuation">{</span>
+  reducers<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">updateState</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> <span class="token punctuation">{</span> payload <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span>state<span class="token punctuation">,</span>
+        <span class="token operator">...</span>payload
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> pageModel <span class="token operator">=</span> <span class="token function">modelExtend</span><span class="token punctuation">(</span>model<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    list<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    pagination<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      showSizeChanger<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      showQuickJumper<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      current<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      total<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      pageSize<span class="token punctuation">:</span> <span class="token number">10</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  reducers<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">querySuccess</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> <span class="token punctuation">{</span> payload <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> list<span class="token punctuation">,</span> pagination <span class="token punctuation">}</span> <span class="token operator">=</span> payload<span class="token punctuation">;</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span>state<span class="token punctuation">,</span>
+        list<span class="token punctuation">,</span>
+        pagination<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          <span class="token operator">...</span>state<span class="token punctuation">.</span>pagination<span class="token punctuation">,</span>
+          <span class="token operator">...</span>pagination
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br></div></div></div><div class="page-edit"><!----><div class="last-updated"><span class="prefix">上次更新: </span><span class="time">12/6/2018, 7:29:59 AM</span></div></div><div class="page-nav"><p class="inner"><span class="prev">
+        ← <a href="/notebook/tools/axios.html" class="prev">
+          axios
+        </a></span><!----></p></div></div></div></div>
+    <script src="/notebook/assets/js/25.fcd851de.js" defer></script><script src="/notebook/assets/js/app.b2db6342.js" defer></script>
+  </body>
+</html>
