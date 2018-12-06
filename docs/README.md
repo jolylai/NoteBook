@@ -19,6 +19,7 @@ footer: Copyright © 2018-present Jolylai
 
 ## Todo List
 
+- commonJs ,amd, es6 中的模块
 - CSS Secret
 - 异步编程
 - umi + [mdx](https://github.com/mdx-js/mdx) + [react-live](https://github.com/FormidableLabs/react-live)
