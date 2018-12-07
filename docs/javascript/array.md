@@ -23,7 +23,9 @@ const ArrayConcat = (arr, ...args) => [].concat(arr, ...args);
 
 :::
 
-## difference
+## 比较两个数组
+
+### difference
 
 找出 a 与 b 的交集的 a 的补集
 
@@ -36,7 +38,7 @@ const difference = (a, b) => {
 // difference([1,2,3], [1,2]) -> [3]
 ```
 
-## differenceBy
+### differenceBy
 
 ```js
 const differenceBy = (a, b, fn) => {
@@ -48,7 +50,7 @@ const differenceBy = (a, b, fn) => {
 // differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); -> [ { x: 2 } ]
 ```
 
-## differenceWith ⭐️
+### differenceWith ⭐️
 
 ```js
 const differenceWith = (arr, val, comp) =>
@@ -354,3 +356,36 @@ const countBy = (arr, fn) =>
 
 - `typeof fn === 'function'` 检验传入的参数是否为函数
   :::
+
+## 初始化数组
+
+### initializeArrayWithRange
+
+```js
+const initializeArrayWithRange = (end, start = 0, step = 1) =>
+  Array.from(
+    { length: Math.ceil((end - start + 1) / step) },
+    (v, i) => i * step + start
+  );
+```
+
+### initializeArrayWithRangeRight
+
+```js
+const initializeArrayWithRangeRight = (end, start = 0, step = 1) =>
+  Array.from({ length: Math.ceil((end + 1 - start) / step) }).map(
+    (v, i, arr) => (arr.length - i - 1) * step + start
+  );
+
+const initializeArrayWithRangeRight = (end, start = 0, step = 1) =>
+  Array.from(
+    { length: Math.ceil((end - start + 1) / step) },
+    (v, i) => i * step + start
+  ).reverse();
+```
+
+### initializeArrayWithValues
+
+```js
+const initializeArrayWithValues = (n, val = 0) => Array(n).fill(val);
+```

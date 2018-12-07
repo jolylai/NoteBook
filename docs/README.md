@@ -16,10 +16,14 @@ footer: Copyright © 2018-present Jolylai
 ## Learning
 
 - [30 seconds of code](https://30secondsofcode.org/)
+- [前端早报](https://github.com/sorrycc/zaobao/issues)
 
 ## Todo List
 
 - commonJs ,amd, es6 中的模块
+- [nginx](http://jspang.com/post/nginx.html)
+- [express](https://expressjs.com/)
+- 路由 权限
 - CSS Secret
 - 异步编程
 - umi + [mdx](https://github.com/mdx-js/mdx) + [react-live](https://github.com/FormidableLabs/react-live)
