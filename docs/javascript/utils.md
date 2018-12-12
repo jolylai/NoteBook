@@ -90,3 +90,15 @@ getRandomColor.colors = [
   "#000000"
 ];
 ```
+
+## isPromise
+
+```js
+function isPromise(obj) {
+  return (
+    !!obj &&
+    (typeof obj === "object" || typeof obj === "function") &&
+    typeof obj.then === "function"
+  );
+}
+```

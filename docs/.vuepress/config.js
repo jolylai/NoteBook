@@ -64,7 +64,7 @@ module.exports = {
         {
           title: "Tools",
           collapsable: false,
-          children: ["", "npm", "deploy", "axios", "dva"]
+          children: ["", "npm", "deploy", "axios", "dva", "git"]
         }
       ]
     },
