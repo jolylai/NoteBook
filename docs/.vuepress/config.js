@@ -1,6 +1,6 @@
 module.exports = {
   title: "NoteBook",
-  description: "🚀 前端攻城秘籍",
+  description: "🚀 前端攻城笔记",
   base: "/notebook/",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
@@ -13,60 +13,20 @@ module.exports = {
         text: "JavaScript",
         link: "/javascript/"
       },
-      // {
-      //   text: "Zent",
-      //   link: "/zent/"
-      // },
       {
         text: "React",
         link: "/react/"
       },
-      // {
-      //   text: "Nodejs",
-      //   link: "/nodejs/"
-      // },
       {
         text: "Tools",
         link: "/tools/"
       }
     ],
     sidebar: {
-      "/css/": [
-        {
-          title: "css",
-          collapsable: false,
-          children: ["", "background", "selector", "css-world-3"]
-        }
-      ],
-      "/javascript/": [
-        {
-          title: "JavaScript",
-          collapsable: false,
-          children: ["", "array", "utils"]
-        }
-      ],
-      // "/zent/": [
-      //   {
-      //     title: "zent",
-      //     collapsable: false,
-      //     children: ["", "affix"]
-      //   }
-      // ],
-      "/react/": [
-        {
-          title: "react",
-          collapsable: false,
-          children: ["lifecycle"]
-        }
-      ],
-      "/nodejs": [""],
-      "/tools/": [
-        {
-          title: "Tools",
-          collapsable: false,
-          children: ["", "npm", "deploy", "axios", "dva", "git"]
-        }
-      ]
+      "/css/": getCssSiderBar("CSS基础"),
+      "/javascript/": getJSSiderBar("JS"),
+      "/react/": getReactSiderBar("React"),
+      "/tools/": getToolsSiderBar("Tools")
     },
     lastUpdated: "上次更新"
   },
@@ -74,3 +34,48 @@ module.exports = {
     lineNumbers: true
   }
 };
+
+function getCssSiderBar(groupA, groupB) {
+  return [
+    {
+      title: groupA,
+      collapsable: false,
+      children: ["", "background", "selector", "css-world-3"]
+    },
+    {
+      title: groupB,
+      collapsable: false,
+      children: []
+    }
+  ];
+}
+
+function getJSSiderBar(groupA) {
+  return [
+    {
+      title: groupA,
+      collapsable: false,
+      children: ["", "array", "utils"]
+    }
+  ];
+}
+
+function getReactSiderBar(groupA) {
+  return [
+    {
+      title: groupA,
+      collapsable: false,
+      children: ["lifecycle", "dva"]
+    }
+  ];
+}
+
+function getToolsSiderBar(groupA) {
+  return [
+    {
+      title: groupA,
+      collapsable: false,
+      children: ["", "git", "npm", "deploy", "axios"]
+    }
+  ];
+}
