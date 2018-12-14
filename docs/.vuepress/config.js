@@ -23,7 +23,7 @@ module.exports = {
       }
     ],
     sidebar: {
-      "/css/": getCssSiderBar("CSS基础"),
+      "/css/": getCssSiderBar("CSS基础", "CSS世界"),
       "/javascript/": getJSSiderBar("JS"),
       "/react/": getReactSiderBar("React"),
       "/tools/": getToolsSiderBar("Tools")
@@ -40,12 +40,12 @@ function getCssSiderBar(groupA, groupB) {
     {
       title: groupA,
       collapsable: false,
-      children: ["", "background", "selector", "css-world-3"]
+      children: ["", "selector", "background", "css-world-3"]
     },
     {
       title: groupB,
       collapsable: false,
-      children: []
+      children: ["overflow"]
     }
   ];
 }

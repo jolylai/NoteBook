@@ -23,17 +23,4 @@
 - 元素内部尺寸：包含 `padding` 但不包括 `border` 的尺寸，js 中为 `clientWidth` 和 `clientHeight`
 - 元素外面尺寸： 包含 `padding` 、`border` 和 `margin`, 没有原生 DOM api
 
-## 脚本和样式提升
-
-有时，你可以只想在当前页面应用一些 JavaScript 或者 CSS，在这种情况下，你可以直接在 Markdown 文件中使用原生的 `<script>` 或者 `<style>` 标签，它们将会从编译后的 HTML 文件中提取出来，并作为生成的 Vue 单文件组件的 `<script>` 和 `<style>` 标签。
-
-<p class="demo" :class="$style.example">
-  <span>这个</span>
-</p>
-
-<style module>
-.example {
-  color: #41b883;
-  
-}
-</style>
+<DemoBlock demo="css-demo1"/>
