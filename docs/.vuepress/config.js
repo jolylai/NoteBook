@@ -23,7 +23,7 @@ module.exports = {
       }
     ],
     sidebar: {
-      "/css/": getCssSiderBar("CSS基础", "CSS世界"),
+      "/css/": getCssSiderBar("CSS基础", "CSS世界", '背景与边框'),
       "/javascript/": getJSSiderBar("JS"),
       "/react/": getReactSiderBar("React"),
       "/tools/": getToolsSiderBar("Tools")
@@ -35,17 +35,27 @@ module.exports = {
   }
 };
 
-function getCssSiderBar(groupA, groupB) {
+function getCssSiderBar(groupA, groupB, groupC) {
   return [
+    {
+      title: '指南',
+      collapsable: false,
+      children: [""]
+    },
     {
       title: groupA,
       collapsable: false,
-      children: ["", "selector", "background", "css-world-3"]
+      children: ["selector", "background", "css-world-3"]
     },
     {
       title: groupB,
       collapsable: false,
       children: ["overflow"]
+    },
+    {
+      title: groupC,
+      collapsable: false,
+      children: ["translucent-borders"]
     }
   ];
 }

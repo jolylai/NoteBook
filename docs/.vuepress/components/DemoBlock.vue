@@ -1,10 +1,8 @@
 <template>
   <div class="demos">
-    <header class="demos-header">DEMO</header>
     <slot>
       <component :is="demo" class="demos-content"/>
     </slot>
-    <footer class="demos-footer" v-if="demo">{{ demo }}</footer>
   </div>
 </template>
 
@@ -15,4 +13,8 @@ export default {
 </script>
 
 <style scoped>
+  .demos{
+    border: 1px solid #B3A078;
+    border-radius: 4px;
+  }
 </style>
