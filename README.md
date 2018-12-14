@@ -1,9 +1,7 @@
-# NoteBook
-
 <p align="center">
-    <h3 align="center">NoteBook</h3>
+    <h1 align="center">NoteBook</h1>
     <p align="center">
-    <img src='http://img.shields.io/travis/jolylai/notebook.svg'>
+    <img src='https://img.shields.io/travis/jolylai/notebook.svg'>
     <img src='https://img.shields.io/github/license/jolylai/notebook.svg'>
     </p>
     <p align="center">
@@ -17,7 +15,7 @@
 
 ## Feature
 
-- [Css Note](https://jolylai.github.io/notebook/css/)
+- [CSS Note](https://jolylai.github.io/notebook/css/)
 - [JS Note](https://jolylai.github.io/notebook/javascript/)
 - [React Note](https://jolylai.github.io/notebook/react/)
 - [Tools](https://jolylai.github.io/notebook/tools/)
