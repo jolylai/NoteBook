@@ -1,25 +1,13 @@
 <template>
-  <main>
-    <p>top</p>
-    <div>Multiple borders!</div>
-    <p>bottom</p>
-  </main>
+  <main>Multiple borders!</main>
 </template>
 
 <style scoped lang='stylus'>
-@import '../../../override.styl';
-
 main {
-  // padding: 2em;
-}
-
-p {
-  padding: 0;
-  margin: 0;
-}
-
-div {
-  margin: 30px;
-  box-shadow: 0 0 0 10px $primaryColor, 0 0 0 20px $successColor, 0 0 0 30px $warningColor;
+  margin: 20px;
+  width: 200px;
+  height: 60px;
+  background: yellowgreen;
+  box-shadow: 0 0 0 10px blue, 0 0 0 20px orange, 0 2px 5px 20px rgba(0, 0, 0, 0.6);
 }
 </style>

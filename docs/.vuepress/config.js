@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   title: "NoteBook",
   description: "🚀 前端攻城笔记",
@@ -33,6 +35,9 @@ module.exports = {
   markdown: {
     lineNumbers: true
   }
+  // chainWebpack: config => {
+  //   config.resolve.alias.set("@public", path.resolve(__dirname, "/public"));
+  // }
 };
 
 function getCssSiderBar(groupA, groupB, groupC) {
@@ -55,7 +60,13 @@ function getCssSiderBar(groupA, groupB, groupC) {
     {
       title: groupC,
       collapsable: false,
-      children: ["translucent-borders", "multiple-borders"]
+      children: [
+        "translucent-borders",
+        "multiple-borders",
+        "background",
+        "inner-rounding",
+        "stripes"
+      ]
     }
   ];
 }

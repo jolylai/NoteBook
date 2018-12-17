@@ -2,6 +2,16 @@
 
 ## box-shadow 方案
 
+```css
+// 额外模拟出边框所需要占据的空间
+margin: 20px;
+background: yellowgreen;
+box-shadow: 0 0 0 10px blue, 0 0 0 20px orange,
+  0 2px 5px 20px rgba(0, 0, 0, 0.6);
+```
+
+  <DemoBlock  demo='css-border-multiple' />
+
 ::: tip 📝
 
 - [box-shadow](https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-shadow)
@@ -24,14 +34,28 @@
 - 只能实现实线边框
   :::
 
-```css
-// 额外模拟出边框所需要占据的空间
-margin: 30px;
-box-shadow: 0 0 0 10px #2f54eb, 0 0 0 20px #52c41a, 0 0 0 30px #faad14;
-```
-
-  <DemoBlock  demo='css-border-multiple' />
-
 ## outline 方案
 
+```css
+margin: 20px;
+padding: 10px;
+background: yellowgreen;
+outline: 10px solid orange;
+border-radius: 10px;
+```
+
   <DemoBlock  demo='css-border-outline' />
+
+::: tip 📝
+
+- 边框样式灵活，可以实现虚线等效果
+- 你可以通过 outline-offset 属性来控制它跟元素边缘之间的间距，这个属性甚至可以接受负值。
+  :::
+
+::: warning 📝
+
+- 因为 outline 并不能接受用逗号分隔的多个值。如果我们需要获得更多层的边框，前一
+  种方案就是我们唯一的选择了。
+- 边框不一定会贴合 border-radius 属性产生的圆角，因此如果元素
+  是圆角的，它的描边可能还是直角的<DemoBlock  demo='css-border-outline1' />
+  :::

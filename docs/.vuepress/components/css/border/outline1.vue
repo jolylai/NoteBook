@@ -7,7 +7,7 @@ main {
   margin: 10px;
   padding: 10px;
   background: yellowgreen;
-  outline: 1px dashed #fff;
-  outline-offset: -6px;
+  outline: 10px solid orange;
+  border-radius: 10px;  
 }
 </style>
