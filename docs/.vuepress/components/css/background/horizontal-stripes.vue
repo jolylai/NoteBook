@@ -21,7 +21,7 @@ li {
   width: 100px;
   height: 80px;
   margin: 2px;
-  border: 1px solid #eee;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 li:nth-child(1) {
