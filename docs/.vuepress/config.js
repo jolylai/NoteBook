@@ -26,7 +26,7 @@ module.exports = {
     ],
     sidebar: {
       "/css/": getCssSiderBar("CSS基础", "CSS世界", "背景与边框"),
-      "/javascript/": getJSSiderBar("JS", "Array"),
+      "/javascript/": getJSSiderBar("JS", "Array", "Date"),
       "/react/": getReactSiderBar("React"),
       "/tools/": getToolsSiderBar("Tools")
     },
@@ -71,7 +71,7 @@ function getCssSiderBar(groupA, groupB, groupC) {
   ];
 }
 
-function getJSSiderBar(groupA, groupB) {
+function getJSSiderBar(groupA, groupB, groupC) {
   return [
     {
       title: groupA,
@@ -82,7 +82,8 @@ function getJSSiderBar(groupA, groupB) {
       title: groupB,
       collapsable: false,
       children: []
-    }
+    },
+    "date"
   ];
 }
 
