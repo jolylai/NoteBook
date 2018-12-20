@@ -1,0 +1,15 @@
+<template>
+  <main>
+    <img src="http://csssecrets.io/images/adamcatlace.jpg">
+  </main>
+</template>
+
+<style scoped>
+img {
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  transition: 1s clip-path;
+}
+img:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+</style>
