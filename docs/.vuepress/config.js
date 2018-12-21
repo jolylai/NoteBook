@@ -77,7 +77,14 @@ function getCssSiderBar(groupA, groupB, groupC, groupD, groupE) {
     {
       title: groupD,
       collapsable: false,
-      children: ["ellipse", "parallelograms", "diamond", "corners", "trapezoid"]
+      children: [
+        "ellipse",
+        "parallelograms",
+        "diamond",
+        "corners",
+        "trapezoid",
+        "pie"
+      ]
     },
     {
       title: groupE,
