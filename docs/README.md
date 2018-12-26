@@ -20,16 +20,14 @@ footer: Copyright © 2018-present Jolylai
 
 ## Todo List
 
-- commonJs ,amd, es6 中的模块
 - [nginx](http://jspang.com/post/nginx.html)
 - [express](https://expressjs.com/)
 - 路由 权限
 - CSS Secret
 - 异步编程
 - umi + [mdx](https://github.com/mdx-js/mdx) + [react-live](https://github.com/FormidableLabs/react-live)
-- Nodejs
+- [Nodejs](https://juejin.im/post/5c1f8e52f265da6170071e43)
 - 滚动条
 - 面包屑
 - 路由守卫
 - [table 文字不换行](http://www.cnblogs.com/aimyfly/archive/2013/07/12/3186651.html)
-- [跨域](https://stackoverflow.com/questions/10636611/how-does-access-control-allow-origin-header-work)

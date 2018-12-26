@@ -30,7 +30,8 @@ module.exports = {
         "CSS世界",
         "背景与边框",
         "形状",
-        "结构与布局"
+        "结构与布局",
+        "用户体验"
       ),
       "/javascript/": getJSSiderBar("JS", "Array", "Date"),
       "/react/": getReactSiderBar("React"),
@@ -46,7 +47,7 @@ module.exports = {
   // }
 };
 
-function getCssSiderBar(groupA, groupB, groupC, groupD, groupE) {
+function getCssSiderBar(groupA, groupB, groupC, groupD, groupE, groupF) {
   return [
     {
       title: "指南",
@@ -96,6 +97,11 @@ function getCssSiderBar(groupA, groupB, groupC, groupD, groupE) {
         "vertical-centering",
         "sticky-footer"
       ]
+    },
+    {
+      title: groupF,
+      collapsable: false,
+      children: ["hit-area", "custom-checkbox"]
     }
   ];
 }
@@ -131,7 +137,7 @@ function getToolsSiderBar(groupA) {
     {
       title: groupA,
       collapsable: false,
-      children: ["", "git", "npm", "deploy", "axios"]
+      children: ["", "git", "npm", "deploy", "axios", "cors"]
     }
   ];
 }
