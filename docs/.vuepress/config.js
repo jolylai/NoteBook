@@ -101,7 +101,7 @@ function getCssSiderBar(groupA, groupB, groupC, groupD, groupE, groupF) {
     {
       title: groupF,
       collapsable: false,
-      children: ["hit-area", "custom-checkbox"]
+      children: ["hit-area", "custom-checkbox", "shadow-weaken-background"]
     }
   ];
 }

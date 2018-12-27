@@ -43,5 +43,6 @@ input[type="checkbox"]:disabled + label::before {
   background: gray;
   box-shadow: none;
   color: #555;
+  cursor: not-allowed;
 }
 </style>
