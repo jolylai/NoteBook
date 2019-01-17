@@ -20,6 +20,10 @@ module.exports = {
         link: "/react/"
       },
       {
+        text: "PomeloUI",
+        link: "/pomelo-ui/"
+      },
+      {
         text: "Tools",
         link: "/tools/"
       }
@@ -35,6 +39,7 @@ module.exports = {
       ),
       "/javascript/": getJSSiderBar("JS", "Array", "Date"),
       "/react/": getReactSiderBar("React"),
+      "/pomelo-ui/": getPomeloUISiderBar("pomeloUI"),
       "/tools/": getToolsSiderBar("Tools")
     },
     lastUpdated: "上次更新"
@@ -137,12 +142,31 @@ function getReactSiderBar(groupA) {
   ];
 }
 
+function getPomeloUISiderBar(groupA) {
+  return [
+    {
+      title: groupA,
+      collapsable: false,
+      children: ["", "affix"]
+    }
+  ];
+}
+
 function getToolsSiderBar(groupA) {
   return [
     {
       title: groupA,
       collapsable: false,
-      children: ["", "git", "npm", "deploy", "axios", "cors"]
+      children: [
+        "",
+        "git",
+        "github",
+        "github-page",
+        // "npm",
+        "deploy",
+        "axios",
+        "cors"
+      ]
     }
   ];
 }

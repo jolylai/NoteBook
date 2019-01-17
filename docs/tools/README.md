@@ -129,6 +129,7 @@
 
 - [vuepress](https://github.com/vuejs/vuepress)
 - [docz](https://github.com/pedronauck/docz)
+- [JournalBook](https://github.com/trys/JournalBook)
 
 ## 工程
 
@@ -149,8 +150,8 @@
 
 ## 编辑器
 
-- [VSCode](https://code.visualstudio.com/)
-- [IntelliJ IDEA](https://www.jetbrains.com/idea/) - 我用这个。
+- [VSCode](https://code.visualstudio.com/) - 我用这个。
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 - [codesandbox](https://codesandbox.io/)
 - [stackblitz](https://stackblitz.com/)
 
@@ -158,6 +159,13 @@
 
 - [css modules](https://github.com/css-modules/css-modules)
 - [emotion](https://github.com/emotion-js/emotion)
+- [cssreference](https://cssreference.io/)
+- [You-need-to-know-css](https://lhammer.cn/You-need-to-know-css/#/)
+- [CSS 灵感](https://chokcoco.github.io/CSS-Inspiration/#/)
+
+## UI
+
+- [uimovement](https://uimovement.com/)
 
 ## 命令行
 
@@ -189,7 +197,21 @@
 - [Fontawesome](https://fontawesome.com/)
 - [Eva Icons](https://github.com/akveo/eva-icons/)
 
+## 视频
+
+- [山地人](http://space.bilibili.com/390120104)
+
+## JS 基础
+
+- [记录前端开发中的技巧以及算法知识](https://github.com/louzhedong/blog)
+
 ## 其他
 
 - [electron](https://github.com/electron/electron)
 - [Gitalk](https://github.com/gitalk/gitalk) -Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。
+- [super-inspire-end](https://github.com/super-inspire/super-inspire-end)在不到 30s 内得到一个干净的开箱即用的临时 linux 系统.
+- [nzh](https://www.npmjs.com/package/nzh) - 阿拉伯数字与中文数字
+- [omit](https://www.npmjs.com/package/omit) - 剔除对象总指定的 key
+- [file-saver](https://www.npmjs.com/package/file-saver) - 文件导出
+- [path-to-regexp](https://www.npmjs.com/package/path-to-regexp) - 解析 url 路径 (Turn a path string such as /user/:name into a regular expression.)
+- [qs](https://www.npmjs.com/package/qs) - A querystring parsing and stringifying library with some added security.
