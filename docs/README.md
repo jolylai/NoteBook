@@ -1,5 +1,6 @@
 ---
 home: true
+heroImage: /hero.jpg
 actionText: 快速上手 →
 actionLink: /css/
 features:
