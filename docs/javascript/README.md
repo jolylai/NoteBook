@@ -1,11 +1,13 @@
 # Guide
 
-::: tip
-整理 JavaScript 中的知识点
-:::
+## 学习资源
 
-## Github 上值得一看和学习的 js 库
-
-- [30-seconds-of-code](https://30secondsofcode.org/) - JavaScript 片段集合
-- [简洁的 js 代码](https://github.com/ryanmcdermott/clean-code-javascript) -js 书写风格
-- [JavaScript Style](https://github.com/airbnb/javascript) -js 书写风格
+- [JavaScript Style](https://github.com/airbnb/javascript) -js 书写风格 <img src="https://img.shields.io/github/stars/airbnb/javascript.svg?style=social">
+- [javascript-algorithms](https://github.com/trekhleb/javascript-algorithms) <img src="https://img.shields.io/github/stars/trekhleb/javascript-algorithms.svg?style=social">
+- [30-seconds-of-code](https://30secondsofcode.org/) - JavaScript 片段集合 <img src="https://img.shields.io/github/stars/30-seconds/30-seconds-of-code.svg?style=social">
+- [Front-End Checklist](https://github.com/thedaviddias/Front-End-Checklist) <img src="https://img.shields.io/github/stars/thedaviddias/Front-End-Checklist.svg?style=social">
+- [Tech Interview Handbook](https://github.com/yangshun/tech-interview-handbook) <img src="https://img.shields.io/github/stars/yangshun/tech-interview-handbook.svg?style=social">
+- [33-js-concepts](https://github.com/leonardomso/33-js-concepts) <img src="https://img.shields.io/github/stars/leonardomso/33-js-concepts.svg?style=social">
+- [Node.js Best Practices](https://github.com/i0natan/nodebestpractices) <img src="https://img.shields.io/github/stars/i0natan/nodebestpractices.svg?style=social">
+- [简洁的 js 代码](https://github.com/ryanmcdermott/clean-code-javascript) -js 书写风格 <img src="https://img.shields.io/github/stars/ryanmcdermott/clean-code-javascript.svg?style=social">
+- [Project Guidelines](https://github.com/elsewhencode/project-guidelines) <img src="https://img.shields.io/github/stars/elsewhencode/project-guidelines.svg?style=social">
