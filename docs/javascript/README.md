@@ -1,6 +1,6 @@
 # Guide
 
-## 学习资源
+## Github
 
 - [JavaScript Style](https://github.com/airbnb/javascript) -js 书写风格 <img src="https://img.shields.io/github/stars/airbnb/javascript.svg?style=social">
 - [javascript-algorithms](https://github.com/trekhleb/javascript-algorithms) <img src="https://img.shields.io/github/stars/trekhleb/javascript-algorithms.svg?style=social">
@@ -11,3 +11,7 @@
 - [Node.js Best Practices](https://github.com/i0natan/nodebestpractices) <img src="https://img.shields.io/github/stars/i0natan/nodebestpractices.svg?style=social">
 - [简洁的 js 代码](https://github.com/ryanmcdermott/clean-code-javascript) -js 书写风格 <img src="https://img.shields.io/github/stars/ryanmcdermott/clean-code-javascript.svg?style=social">
 - [Project Guidelines](https://github.com/elsewhencode/project-guidelines) <img src="https://img.shields.io/github/stars/elsewhencode/project-guidelines.svg?style=social">
+
+## Blog
+
+- [记录前端开发中的技巧以及算法知识](https://github.com/louzhedong/blog)

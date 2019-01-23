@@ -95,6 +95,11 @@
 - [path-to-regexp](https://github.com/pillarjs/path-to-regexp)
 - [lodash](https://github.com/lodash/lodash)
 - [fastclick](https://github.com/ftlabs/fastclick)
+- [nzh](https://www.npmjs.com/package/nzh) - 阿拉伯数字与中文数字
+- [omit](https://www.npmjs.com/package/omit) - 剔除对象总指定的 key
+- [file-saver](https://www.npmjs.com/package/file-saver) - 文件导出
+- [path-to-regexp](https://www.npmjs.com/package/path-to-regexp) - 解析 url 路径 (Turn a path string such as /user/:name into a regular expression.)
+- [qs](https://www.npmjs.com/package/qs) - A querystring parsing and stringifying library with some added security.
 
 ## 数据流
 
@@ -196,22 +201,18 @@
 
 - [Fontawesome](https://fontawesome.com/)
 - [Eva Icons](https://github.com/akveo/eva-icons/)
+- [iconfont](https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a)
 
 ## 视频
 
 - [山地人](http://space.bilibili.com/390120104)
 
-## JS 基础
+## 网站工具
 
-- [记录前端开发中的技巧以及算法知识](https://github.com/louzhedong/blog)
+- [mockuphone](https://mockuphone.com/#iPhone-X)
 
 ## 其他
 
 - [electron](https://github.com/electron/electron)
 - [Gitalk](https://github.com/gitalk/gitalk) -Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。
 - [super-inspire-end](https://github.com/super-inspire/super-inspire-end)在不到 30s 内得到一个干净的开箱即用的临时 linux 系统.
-- [nzh](https://www.npmjs.com/package/nzh) - 阿拉伯数字与中文数字
-- [omit](https://www.npmjs.com/package/omit) - 剔除对象总指定的 key
-- [file-saver](https://www.npmjs.com/package/file-saver) - 文件导出
-- [path-to-regexp](https://www.npmjs.com/package/path-to-regexp) - 解析 url 路径 (Turn a path string such as /user/:name into a regular expression.)
-- [qs](https://www.npmjs.com/package/qs) - A querystring parsing and stringifying library with some added security.
