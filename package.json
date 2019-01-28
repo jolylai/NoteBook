@@ -6,5 +6,7 @@
   "dependencies": {
     "vuepress": "^0.14.8"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "vuepress-plugin-demo-block": "^0.7.0"
+  }
 }

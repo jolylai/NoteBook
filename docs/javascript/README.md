@@ -1,5 +1,9 @@
 # Guide
 
+## 基础
+
+- [前端小测](https://github.com/zhangxinxu/quiz)
+
 ## Github
 
 - [JavaScript Style](https://github.com/airbnb/javascript) -js 书写风格 <img src="https://img.shields.io/github/stars/airbnb/javascript.svg?style=social">
