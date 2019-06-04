@@ -1,4 +1,4 @@
-# Github page 自动构建
+# Github page
 
 :::tip 用例
 将项目推送到远程的 github 上的时候，自动打包项目，并将打包好的包自动部署到 github page 上。

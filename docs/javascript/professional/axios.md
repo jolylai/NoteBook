@@ -1,8 +1,6 @@
 # axios
 
-::: tip
-基于 promise，封装 http 请求
-:::
+> [Promise based HTTP client for the browser and node.js](https://github.com/axios/axios)
 
 ## 状态码
 
