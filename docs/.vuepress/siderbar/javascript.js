@@ -8,6 +8,11 @@ module.exports = {
   ],
   "/javascript/lodash/": [
     {
+      title: "Lodash",
+      collapsable: false,
+      children: [""]
+    },
+    {
       title: "Array",
       collapsable: false,
       children: ["chunk", "compact", "difference", "flatten"]
