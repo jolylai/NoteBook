@@ -25,3 +25,17 @@ function chunk(array, size) {
   return result;
 }
 ```
+
+```js
+const chunk = (arr, size) =>
+  Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
+    arr.slice(i * size, i * size + size)
+  );
+
+// chunk([1,2,3,4,5], 2) -> [[1,2],[3,4],[5]]
+```
+
+::: tip
+
+- [Array.from()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
+  :::

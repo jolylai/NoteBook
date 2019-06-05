@@ -8,9 +8,9 @@ module.exports = {
   ],
   "/react/antd/": [
     {
-      title: "Reactjs",
+      title: "Ant Design",
       collapsable: false,
-      children: ["", "dva"]
+      children: ["dva", "upload"]
     }
   ],
   "/react/pomelo-ui/": [

@@ -7,7 +7,7 @@ Flattens array
 The `Symbol.isConcatSpreadable` well-known symbol is used to configure if an object should be flattened to its array elements when using the `Array.prototype.concat()` method.
 
 ```js
-const alpha = ['a', 'b', 'c'];
+const alpha = ["a", "b", "c"];
 const numeric = [1, 2, 3];
 
 let alphaNumeric;
@@ -26,9 +26,9 @@ For array-like objects, the default is to not spread. Symbol.isConcatSpreadable 
 const numeric = [1, 2, 3];
 
 const fakeArray = {
-    0: 'hello',
-    1: 'world',
-    length: 2,
+  0: "hello",
+  1: "world",
+  length: 2
 };
 
 numeric.concat(fakeArray); // Result: [1, 2, 3,{0: 'hello',1: 'world' ,length: 2}]
@@ -46,9 +46,9 @@ Checks if `value` is a flattenable `arguments` object or array.
 const spreadableSymbol = Symbol.isConcatSpreadable;
 
 function isFlattenable(value) {
-    // Array-like objects
-    // !!(value && value[spreadableSymbol])
-    return Array.isArray(value) || !!(value && value[spreadableSymbol]);
+  // Array-like objects
+  // !!(value && value[spreadableSymbol])
+  return Array.isArray(value) || !!(value && value[spreadableSymbol]);
 }
 ```
 
@@ -58,29 +58,29 @@ The base implementation of `flatten` with support for restricting flattening.
 
 ```js
 function baseFlatten(array, depth, predicate, isStrict, result = []) {
-    if (array == null) {
-        return result;
-    }
-
-    for (const value of array) {
-        if (depth > 0 && predicate(value)) {
-            if (depth > 1) {
-                baseFlatten(value, depth - 1, predicate, isStrict, result);
-            } else {
-                result.push(...value);
-            }
-        } else if (!isStrict) {
-            result[result.length] = value;
-            // result.push(value)
-        }
-    }
+  if (array == null) {
     return result;
+  }
+
+  for (const value of array) {
+    if (depth > 0 && predicate(value)) {
+      if (depth > 1) {
+        baseFlatten(value, depth - 1, predicate, isStrict, result);
+      } else {
+        result.push(...value);
+      }
+    } else if (!isStrict) {
+      result[result.length] = value;
+      // result.push(value)
+    }
+  }
+  return result;
 }
 ```
 
 📝**Note**
 
--   undefind == null // -> true
+- undefind == null // -> true
 
 ## flatten
 
@@ -88,10 +88,10 @@ flatten array a single level deep
 
 ```js
 function flatten(array) {
-    if (array == null) {
-        return [];
-    }
-    return baseFlatten(array, 1);
+  if (array == null) {
+    return [];
+  }
+  return baseFlatten(array, 1);
 }
 ```
 
@@ -103,10 +103,10 @@ Recursively (递归) flattens array.
 const INFINITY = 1 / 0;
 
 function flattenDeep(array) {
-    if (array == null) {
-        return [];
-    }
-    return baseFlatten(array, INFINITY);
+  if (array == null) {
+    return [];
+  }
+  return baseFlatten(array, INFINITY);
 }
 ```
 
@@ -114,13 +114,27 @@ function flattenDeep(array) {
 
 ```js
 function flattenDepth(array, depth = 1) {
-    if (array == null) {
-        return [];
-    }
-    return baseFlatten(array, +depth);
+  if (array == null) {
+    return [];
+  }
+  return baseFlatten(array, +depth);
 }
 ```
 
 **Note**
 
--   `+depth` equal `Number(depth)`
+- `+depth` equal `Number(depth)`
+
+```js
+const deepFlatten = arr =>
+  [].concat(...arr.map(v => (Array.isArray(v) ? deepFlatten(v) : v)));
+
+// deepFlatten([1,[2],[[3],4],5]) -> [1,2,3,4,5]
+```
+
+::: tip
+
+- `[].concat(1, [2]) -> [1, 2]` `[].concat([1, [2]]) -> [1, [2]]`
+- arr 为 `[1, [2]]` arr.map 返回的值为 `[1, [2]]`, 所有要...arr.map
+- 化简为将 `[1, [2]]` 数组扁平化，然后递归
+- :::

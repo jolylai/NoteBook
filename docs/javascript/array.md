@@ -23,46 +23,6 @@ const ArrayConcat = (arr, ...args) => [].concat(arr, ...args);
 
 :::
 
-## 比较两个数组
-
-### difference
-
-找出 a 与 b 的交集的 a 的补集
-
-```js
-const difference = (a, b) => {
-  const s = new Set(b);
-  return a.filter(x => !s.has(x));
-};
-
-// difference([1,2,3], [1,2]) -> [3]
-```
-
-### differenceBy
-
-```js
-const differenceBy = (a, b, fn) => {
-  const s = new Set(b.map(fn));
-  return a.filter(x => !s.has(fn(x)));
-};
-
-// differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor); -> [1.2]
-// differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); -> [ { x: 2 } ]
-```
-
-### differenceWith ⭐️
-
-```js
-const differenceWith = (arr, val, comp) =>
-  arr.filter(a => val.findIndex(b => comp(a, b)) === -1);
-
-// differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Math.round(b)); -> [1, 1.2]
-```
-
-::: tip
-
-- [Array.findIndex](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)
-  :::
 
 ## include
 
@@ -174,32 +134,7 @@ const average = arr => arr.reduce((acc, val) => acc + val, 0) / arr.length;
 // average([1,2,3]) -> 2
 ```
 
-## chunk
 
-```js
-const chunk = (arr, size) =>
-  Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
-    arr.slice(i * size, i * size + size)
-  );
-
-// chunk([1,2,3,4,5], 2) -> [[1,2],[3,4],[5]]
-```
-
-::: tip
-
-- [Array.from()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
-  :::
-
-## compact
-
-过滤掉 falsey values (false, null, 0, "", undefined, and NaN).
-
-```js
-const compact = arr => arr.filter(v => v);
-const compact = arr => arr.filter(Boolean);
-
-// compact([0, 1, false, 2, '', 3, 'a', 'e'*23, NaN, 's', 34]) -> [ 1, 2, 3, 'a', 's', 34 ]
-```
 
 ## occurrences
 
@@ -215,19 +150,6 @@ const countOccurrences = (arr, value) =>
 
 将数组扁平化
 
-```js
-const deepFlatten = arr =>
-  [].concat(...arr.map(v => (Array.isArray(v) ? deepFlatten(v) : v)));
-
-// deepFlatten([1,[2],[[3],4],5]) -> [1,2,3,4,5]
-```
-
-::: tip
-
-- `[].concat(1, [2]) -> [1, 2]` `[].concat([1, [2]]) -> [1, [2]]`
-- arr 为 `[1, [2]]` arr.map 返回的值为 `[1, [2]]`, 所有要...arr.map
-- 化简为将 `[1, [2]]` 数组扁平化，然后递归
-- :::
 
 ## dropElements
 
