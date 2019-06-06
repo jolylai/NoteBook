@@ -1,7 +1,9 @@
-module.exports = [
-  {
-    title: "Tools",
-    collapsable: false,
-    children: ["", "vscode", "chrome"]
-  }
-];
+module.exports = {
+  "/tools/": [
+    {
+      title: "Tools",
+      collapsable: false,
+      children: ["", "libs", "vscode", "chrome"]
+    }
+  ]
+};

@@ -36,3 +36,14 @@ function compact(array) {
   return array.filter(Boolean);
 }
 ```
+
+## compact
+
+过滤掉 falsey values (false, null, 0, "", undefined, and NaN).
+
+```js
+const compact = arr => arr.filter(v => v);
+const compact = arr => arr.filter(Boolean);
+
+// compact([0, 1, false, 2, '', 3, 'a', 'e'*23, NaN, 's', 34]) -> [ 1, 2, 3, 'a', 's', 34 ]
+```

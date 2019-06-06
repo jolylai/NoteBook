@@ -154,7 +154,7 @@ http {
         }
 
     # 定义错误提示页面
-    error_page   500 502 503 504 /50x.html;  
+    error_page   500 502 503 504 /50x.html;
         location = /50x.html {
         root   /root;
     }
@@ -267,7 +267,7 @@ http {
         }
 
     # 定义错误提示页面
-    error_page   500 502 503 504 /50x.html;  
+    error_page   500 502 503 504 /50x.html;
         location = /50x.html {
         root   /root;
     }
