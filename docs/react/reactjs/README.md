@@ -1,5 +1,13 @@
 # React
 
+## Awesome
+
+- [awesome-react-hooks](https://github.com/rehooks/awesome-react-hooks)
+
+## Article
+
+- [编写有弹性的组件](https://overreacted.io/zh-hans/writing-resilient-components/)
+
 ## 小知识点
 
 - React 组件中的 `key` 属性的值改变，React 将会创建新的实例，而不是更新现有的实例（可以用于重置 defaultProps）
