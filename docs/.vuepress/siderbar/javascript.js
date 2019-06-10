@@ -25,7 +25,12 @@ module.exports = {
   ],
   "/javascript/you-dont-know-js/": [
     {
-      title: "You-dont-know-js",
+      title: "异步",
+      collapsable: false,
+      children: ["generator"]
+    },
+    {
+      title: "ES6",
       collapsable: false,
       children: ["map", "set"]
     }

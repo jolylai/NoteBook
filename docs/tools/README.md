@@ -4,8 +4,12 @@
 
 - [nodemon](https://github.com/remy/nodemon) - onitor for any changes in your node.js application and automatically restart the server - perfect for development
 - [regexper](https://regexper.com/) - 正则表达式图形解析
+- [medium-zoom](https://github.com/francoischalifour/medium-zoom)
 
 ## 工具网站
+
+### Mock
+- [Mock](https://easy-mock.com)
 
 ### 图片
 

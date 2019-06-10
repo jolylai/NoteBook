@@ -17,7 +17,7 @@ module.exports = [
   {
     text: "React",
     items: [
-      { text: "React", link: "/react/reactjs/" },
+      { text: "Reactjs", link: "/react/reactjs/" },
       { text: "Antd", link: "/react/antd/" },
       { text: "Pomelo UI", link: "/react/pomelo-ui/" },
       { text: "Gatsby", link: "/react/gatsby/" }
