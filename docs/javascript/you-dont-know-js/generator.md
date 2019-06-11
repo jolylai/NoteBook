@@ -132,3 +132,163 @@ for (var ret; (ret = something.next()) && !ret.done; ) {
 
 for..of 循环在每次迭代中自动调用 next()，它不会向 next() 传入任何值，并且会在接收
 到 done:true 之后自动停止
+
+## 生成器委托
+
+从一个生成器调用另一个生成器。yield 委托的主要目的是代码组织，以达到与普通函数调用的对称。
+
+```js
+function* foo() {
+  console.log("*foo() starting");
+  yield 3;
+  yield 4;
+  console.log("*foo() finished");
+}
+function* bar() {
+  // yield *[1,2] 会消耗数组值 [1,2] 的默认迭代器。
+  yield* [1, 2];
+  yield* foo(); // yield委托！
+  yield 5;
+}
+var it = bar();
+it.next().value; // 1
+it.next().value; // 2
+it.next().value; // *foo()启动
+// 3
+it.next().value; // 4
+it.next().value; // *foo()完成
+// 5
+```
+
+`yield *` 把迭代器实例控制（当前 `*bar()` 生成器的）委托给 / 转移到了这另一个 `*foo()` 迭代器。
+
+### 消息委托
+
+思考下面消息的消息流出入
+
+```js
+function* foo() {
+  // it.next(2)
+  console.log("inside *foo():", yield "B");
+  // it.next(3)
+  console.log("inside *foo():", yield "C");
+  return "D";
+}
+function* bar() {
+  // it.next(1)
+  console.log("inside *bar():", yield "A");
+  // yield委托！
+  // *bar() 中return "D"
+  console.log("inside *bar():", yield* foo());
+  // it.next(4)
+  console.log("inside *bar():", yield "E");
+  return "F";
+}
+var it = bar();
+
+console.log(it.next().value);
+// outside: A
+
+console.log(it.next(1).value);
+// inside *bar(): 1
+// outside: B
+
+console.log(it.next(2).value);
+// inside *foo(): 2
+// outside: C
+
+console.log(it.next(3).value);
+// inside *foo(): 3
+// inside *bar(): D
+// outside: E
+
+console.log(it.next(4).value);
+// inside *bar(): 4
+// outside: F
+```
+
+### 异常也被委托
+
+```js
+function* foo() {
+  try {
+    yield "B";
+  } catch (err) {
+    // 捕获 it.throw(2) 中传进来的值
+    console.log("error caught inside *foo():", err);
+  }
+  yield "C";
+  throw "D";
+}
+function* bar() {
+  yield "A";
+  try {
+    yield* foo();
+  } catch (err) {
+    // 捕获 *foo() 中 throw "D"
+    console.log("error caught inside *bar():", err);
+  }
+  yield "E";
+  yield* baz();
+  // 注：不会到达这里！
+  // 从 *baz() throw 出来的异常并没有在 *bar() 内被捕获——所以 *baz() 和 *bar()
+  // 都被设置为完成状态。这段代码之后，就再也无法通过任何后续的 next(..) 调用得到
+  // 值 "G"，next(..) 调用只会给 value 返回 undefined。
+  yield "G";
+}
+function* baz() {
+  throw "F";
+}
+var it = bar();
+
+console.log("outside:", it.next().value);
+// outside: A
+console.log("outside:", it.next(1).value);
+// outside: B
+console.log("outside:", it.throw(2).value);
+// error caught inside *foo(): 2
+// outside: C
+console.log("outside:", it.next(3).value);
+// error caught inside *bar(): D
+// outside: E
+try {
+  console.log("outside:", it.next(4).value);
+} catch (err) {
+  console.log("error caught outside:", err);
+}
+// error caught outside: F
+console.log("it.next().value: ", it.next().value);
+```
+
+### 异步委托
+
+```js
+function* foo() {
+  var r2 = yield request("http://some.url.2");
+  var r3 = yield request("http://some.url.3/?v=" + r2);
+  return r3;
+}
+function* bar() {
+  var r1 = yield request("http://some.url.1");
+  var r3 = yield* foo();
+  console.log(r3);
+}
+run(bar);
+```
+
+### 递归委托
+
+```js
+function* foo(val) {
+  if (val > 1) {
+    // 生成器递归
+    val = yield* foo(val - 1);
+  }
+  return yield request("http://some.url/?v=" + val);
+}
+function* bar() {
+  var r1 = yield* foo(3);
+  console.log(r1);
+}
+run(bar);
+```
