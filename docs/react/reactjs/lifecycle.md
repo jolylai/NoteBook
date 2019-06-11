@@ -1,4 +1,6 @@
-# React 生命周期
+# 生命周期
+
+![life-cycle](../../.vuepress/images/react/life-cycle.jpg)
 
 ## 概览
 
