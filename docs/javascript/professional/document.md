@@ -1,4 +1,4 @@
-# document相关的宽高属性
+# document 相关的宽高属性
 
 [HTML 的各种宽高](https://www.jianshu.com/p/60332df38393)
 
@@ -9,8 +9,6 @@
 ```js
 const rootElement = document.documentElement;
 ```
-
----
 
 ## client
 
@@ -50,8 +48,6 @@ const body = document.body;
 const borderLeft = body.clientTop; // -> 20
 ```
 
----
-
 ## offset
 
 ### HTMLElement.offsetWidth
@@ -86,35 +82,33 @@ HTMLElement.offsetHeight 是一个只读属性，它返回该元素的像素高�
 
 ```html
 <div
-    style="width: 300px; border-color:blue;
+  style="width: 300px; border-color:blue;
   border-style:solid; border-width:1;"
 >
-    <span>Short span. </span>
-    <span id="long">Long span that wraps withing this div.</span>
+  <span>Short span. </span>
+  <span id="long">Long span that wraps withing this div.</span>
 </div>
 
 <div
-    id="box"
-    style="position: absolute; border-color: red;
+  id="box"
+  style="position: absolute; border-color: red;
   border-width: 1; border-style: solid; z-index: 10"
 ></div>
 
 <script>
-    var box = document.getElementById('box');
-    var long = document.getElementById('long');
-    //
-    // long.offsetLeft这个值就是span的offsetLeft.
-    // span是个行内元素，它没有absolute定位，但还是默认offsetParent就是父元素，而不是根
-    //
+  var box = document.getElementById("box");
+  var long = document.getElementById("long");
+  //
+  // long.offsetLeft这个值就是span的offsetLeft.
+  // span是个行内元素，它没有absolute定位，但还是默认offsetParent就是父元素，而不是根
+  //
 
-    box.style.left = long.offsetLeft + document.body.scrollLeft + 'px';
-    box.style.top = long.offsetTop + document.body.scrollTop + 'px';
-    box.style.width = long.offsetWidth + 'px';
-    box.style.height = long.offsetHeight + 'px';
+  box.style.left = long.offsetLeft + document.body.scrollLeft + "px";
+  box.style.top = long.offsetTop + document.body.scrollTop + "px";
+  box.style.width = long.offsetWidth + "px";
+  box.style.height = long.offsetHeight + "px";
 </script>
 ```
-
----
 
 ## scroll
 

@@ -26,5 +26,12 @@ module.exports = {
       collapsable: false,
       children: [""]
     }
+  ],
+  "/react/taro/": [
+    {
+      title: "Taro",
+      collapsable: false,
+      children: [""]
+    }
   ]
 };

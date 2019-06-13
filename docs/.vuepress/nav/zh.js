@@ -20,7 +20,8 @@ module.exports = [
       { text: "Reactjs", link: "/react/reactjs/" },
       { text: "Antd", link: "/react/antd/" },
       { text: "Pomelo UI", link: "/react/pomelo-ui/" },
-      { text: "Gatsby", link: "/react/gatsby/" }
+      { text: "Gatsby", link: "/react/gatsby/" },
+      { text: "Taro", link: "/react/taro/" }
     ]
   },
   {
