@@ -10,7 +10,7 @@ module.exports = {
     {
       title: "Ant Design",
       collapsable: false,
-      children: ["dva", "upload"]
+      children: ["dva", "upload", "ant-design-pro"]
     }
   ],
   "/react/pomelo-ui/": [

@@ -3,7 +3,7 @@ module.exports = {
     {
       title: "Tools",
       collapsable: false,
-      children: ["", "libs", "vscode", "chrome"]
+      children: ["", "libs", "vscode", "chrome", "nvm"]
     }
   ]
 };
