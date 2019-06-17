@@ -1,4 +1,4 @@
-# ant-design-pro 项目搭建
+# 项目搭建
 
 ## 初始化项目
 
@@ -14,6 +14,12 @@ yarn create umi
 ```
 
 ## 本地开发
+
+### 更新 node 版本
+
+由于 Antd Design Pro 4.0 要求 `"node": ">=10.0.0"`, 所有确保本地的的 node 版本 `>=10.0.0`, windows 可以[参考](/tools/nvm.html)
+
+### 安装依赖
 
 ```bash
 # 安装依赖
@@ -54,13 +60,3 @@ yarn
 ├── README.md
 └── package.json
 ```
-
-## 添加区块
-
-```bash
-# 添加登录区块
-umi block add ant-design-pro/UserLogin
-```
-
-[官方区块使用文档](https://umijs.org/zh/guide/block.html#%E4%BD%BF%E7%94%A8%E5%8C%BA%E5%9D%97)
-更多的区块可以到[umi-blocks](https://github.com/umijs/umi-blocks)中查找

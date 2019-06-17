@@ -7,6 +7,7 @@
 ## Article
 
 - [编写有弹性的组件](https://overreacted.io/zh-hans/writing-resilient-components/)
+- [你可能不需要使用派生 state](https://zh-hans.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html)
 
 ## 小知识点
 

@@ -1,4 +1,4 @@
-# Chrome Extension
+# Chrome 插件
 
 - [OctoLinker](https://github.com/OctoLinker/OctoLinker) — Links together, what belongs together
 - [Hide Files on GitHub](https://github.com/sindresorhus/hide-files-on-github) - Hide nonessential files from the GitHub file browser
