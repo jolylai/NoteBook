@@ -3,7 +3,14 @@ module.exports = {
     {
       title: "Reactjs",
       collapsable: false,
-      children: ["", "lifecycle", "advanced", "writing-resilient-components"]
+      children: [
+        "",
+        "lifecycle",
+        "advanced",
+        "writing-resilient-components",
+        "derived-state",
+        "memoization"
+      ]
     }
   ],
   "/react/antd/": [
@@ -11,11 +18,6 @@ module.exports = {
       title: "Ant Design",
       collapsable: false,
       children: ["dva", "upload"]
-    },
-    {
-      title: "Ant Design Pro",
-      collapsable: false,
-      children: ["ant-design-pro"]
     }
   ],
   "/react/antd-pro/": [

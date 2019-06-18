@@ -5,7 +5,7 @@
 </template>
 
 <style scoped lang='stylus'>
-@import '../../../override.styl';
+@import '../../../styles/palette.styl';
 
 main {
   padding: 2em;
