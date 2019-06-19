@@ -17,7 +17,7 @@ module.exports = {
     {
       title: "Ant Design",
       collapsable: false,
-      children: ["dva", "upload"]
+      children: ["dva", "upload", 'form']
     }
   ],
   "/react/antd-pro/": [
