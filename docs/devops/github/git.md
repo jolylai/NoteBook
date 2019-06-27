@@ -57,6 +57,21 @@ git push -f -u origin master
 
 ---
 
+## Config
+
+```bash
+git config --global user.name <your name>
+git config --global user.email <your_email@example.com>
+git config --global push.default simple
+git config --global core.quotepath false
+git config --global core.editor /usr/bin/vim
+git config --global credential.helper store
+git config --global credential.helper wincred
+git config --global core.ignorecase false
+# 设置大小写敏感，保持 Mac/Win/Linux一致性；在目录名大小写修改时，git可正常提交；
+$ git config --global core.ignorecase false
+```
+
 ## Commit 规范
 
 > [Commit 规范](https://yanhaijing.com/git/2016/02/17/my-commit-message/)

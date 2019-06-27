@@ -17,14 +17,14 @@ module.exports = {
     {
       title: "Ant Design",
       collapsable: false,
-      children: ["dva", "upload", 'form']
+      children: ["upload", "form", "select"]
     }
   ],
   "/react/antd-pro/": [
     {
       title: "Ant Design Pro",
       collapsable: false,
-      children: ["", "block"]
+      children: ["", "dva", "block", "file-saver"]
     }
   ],
   "/react/pomelo-ui/": [

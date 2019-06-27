@@ -8,6 +8,8 @@
 
 - [编写有弹性的组件](https://overreacted.io/zh-hans/writing-resilient-components/)
 - [你可能不需要使用派生 state](https://zh-hans.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html)
+- [suspense](https://blog.logrocket.com/the-future-of-react-unfolding-with-suspense/)
+- [react-window](https://web.dev/virtualize-long-lists-react-window)
 
 ## 小知识点
 

@@ -12,6 +12,13 @@ module.exports = {
       collapsable: false,
       children: ["start", "install", "deploy"]
     }
+  ],
+  "/devops/travis/": [
+    {
+      title: "Travis",
+      collapsable: false,
+      children: ["", "server"]
+    }
   ]
   // "/devops/linus/": [
   //   {
