@@ -5968,9 +5968,9 @@ vuepress-plugin-demo-block@^0.7.0:
   version "0.7.0"
   resolved "http://registry.npm.taobao.org/vuepress-plugin-demo-block/download/vuepress-plugin-demo-block-0.7.0.tgz#f47f2ff8cf396bf01c84b66ea1cfcb19300e1f40"
 
-vuepress@0.14.11:
-  version "0.14.11"
-  resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-0.14.11.tgz#fc6ba0e609e3433a8070e95301b4d987712b2a08"
+vuepress@0.14.10:
+  version "0.14.10"
+  resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-0.14.10.tgz#070281ad0c9d48e7c848eb9511c96ceb106414ab"
   dependencies:
     "@babel/core" "7.0.0-beta.47"
     "@vue/babel-preset-app" "3.0.0-beta.11"

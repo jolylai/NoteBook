@@ -1,8 +1,10 @@
 # 服务器
 
-## 服务器配置
+自动部署项目到自己的服务器
 
-```shell
+## 配置服务器
+
+```bash
 # 安装ruby
 $ sudo apt install ruby
 
@@ -27,8 +29,38 @@ $ gem install travis
 
 ## ssh
 
+配置 ssh 登录服务器
+
+如果还没有生成过秘钥可以使用以下命令生成秘钥，已生成过的可以使用已生成的
+
 ```bash
-ssh-keygen -t rsa # 然后一路回车即可
+# 然后一路回车即可
+ssh-keygen -t rsa
+```
+
+执行完成后会生成两文件 `id_rsa`（私钥） id_rsa.pub（共玥）
+
+```bash
+# 将 key 复制到黏贴板
+
+# Git Bash on Windows / Windows PowerShell
+cat ~/.ssh/id_rsa.pub | clip
+
+# macOS
+pbcopy < ~/.ssh/id_rsa.pub
+
+# Linux
+xclip -sel clip < ~/.ssh/id_rsa.pub
+
+# Windows
+type %userprofile%\.ssh\id_rsa.pub | clip
+```
+
+使用以上命令复制共玥，然后登录自己的服务器后台，绑定密钥。
+
+服务器配置完成后，测试写能否可以用 ssh 登录服务器
+
+```bash
 # ssh-copy-id 可能需要另行安装
 # 如果ssh默认端口是22，则不需要 -p
 ssh-copy-id <登录部署服务器用户名>@<部署服务器地址> -p <部署服务器ssh端口>
@@ -50,18 +82,27 @@ $ travis login --auto
 $ travis encrypt-file ~/.ssh/id_rsa --add
 ```
 
-## ssh known_hosts
-
+```yaml {4,5}
+addons:
+  ssh_known_hosts: 服务器地址
+before_install:
+  - openssl aes-256-cbc -K $encrypted_2a01126f8b17_key -iv $encrypted_2a01126f8b17_iv
+    -in id_rsa.enc -out ~/.ssh/id_rsa -d
+  # 权限
+  - chmod 600 ~/.ssh/id_rsa
+  - echo -e "Host 106.12.140.131\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+```
 因为 travis-ci 默认只添加了 github.com, gist.github.com 和 ssh.github.com 为 known_hosts，rsync 执行时会提示是否添加，但是 travis-ci 里不能输入确认，所以需要将自动服务器的域名和商品添加到 known_hosts
 
-```yml
-addons:
-  ssh_known_hosts: uedsky.com:1223
-```
+::: tip
+travis 自动生成的会有`\`，需要自己删除
+:::
 
-## 上传文件
+## 执行自己的服务器命令
 
-```yml
+### 上传文件
+
+```yaml
 # 没有修改过端口的，可以用这个，上传目录要加 -r 参数
 - scp -o stricthostkeychecking=no -r 要上传的文件或目录 用户@域名或IP:/路径
 # 由于我修改了默认的port，所以在这里也进行了加密处理
@@ -70,9 +111,9 @@ addons:
 
 最后，就是在 after_success 周期中，添加上传服务器的指令即可，在这里要注意，如果没有 stricthostkeychecking=no 参数，将构建失败，详细原因请参考通过 travis 部署代码到远程服务器
 
-## 示例
+## 完整的 `.travis.yml` 文件
 
-```yml
+```yaml
 language: node_js
 node_js: 8
 branches:

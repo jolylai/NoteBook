@@ -4,7 +4,7 @@
 
 ## documentElement
 
-`Document.documentElement` 是一个会返回文档对象（document）的根元素的只读属性（如 HTML 文档的 <html> 元素）。
+`Document.documentElement` 是一个会返回文档对象（document）的根元素的只读属性（如 HTML 文档的 `<html>` 元素）。
 
 ```js
 const rootElement = document.documentElement;

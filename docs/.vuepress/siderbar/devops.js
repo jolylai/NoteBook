@@ -17,7 +17,7 @@ module.exports = {
     {
       title: "Travis",
       collapsable: false,
-      children: ["", "server"]
+      children: ["", "gh-pages", "server"]
     }
   ]
   // "/devops/linus/": [
