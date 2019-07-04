@@ -24,5 +24,5 @@ docker run -p 27017:27017 -v <LocalDirectoryPath>:/data/db --name docker_mongodb
 ### **进入 mongo 交互模式**
 
 ```shell
-docker exec -it <CONTAINER NAME> mongo admin
+docker exec -it <CONTAINER NAME> /bin/bash
 ```

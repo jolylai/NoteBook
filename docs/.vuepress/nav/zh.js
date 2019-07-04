@@ -36,9 +36,9 @@ module.exports = [
     text: "DevOps",
     items: [
       { text: "Github", link: "/devops/github/" },
-      { text: "Linus", link: "/devops/linus/" },
       { text: "Docker", link: "/devops/docker/" },
-      { text: "Travis", link: "/devops/travis/" }
+      { text: "Travis", link: "/devops/travis/" },
+      { text: "Linus", link: "/devops/linux/" }
       // { text: "Nginx", link: "/devops/nginx/" }
     ]
   },

@@ -37,7 +37,7 @@ $ sudo chkconfig docker on
 
 **Docker Container**: It is a running instance of docker image. there can be many containers running from same docker image.
 
-### Dockerfile
+## Dockerfile
 
 Environment variables are supported by the following list of instructions in the [Dockerfile](https://docs.docker.com/engine/reference/builder/):
 
@@ -72,6 +72,115 @@ EXPOSE 8081
 CMD node index.js
 ```
 
-### Image
+## Image
 
-### Container
+### 查看镜像
+
+```bash
+# 查看本地所有 image
+$ docker images
+```
+
+### 创建镜像
+
+```bash
+# 从 Dockerfile 创建 image
+$ docker build -t [imageName] [pathToFolder]
+$ docker build -t hello-world .
+
+# 从 container 创建 image
+$ docker commit [container] [imageName]
+```
+
+- **--tag, -t**: 镜像的名字及标签，通常 name:tag 或者 name 格式；可以在一次构建中为一个镜像设置多个标签。
+- **-f** :指定要使用的 Dockerfile 路径；
+- **--rm** :设置镜像成功后删除中间容器；
+- **--build-arg=[]** :设置镜像创建时的变量；
+
+### 删除镜像
+
+```bash
+# 删除本地 image
+$ docker rmi [image]
+# 给 image 打 tag
+$ docker tag [imageId] [imageName]
+```
+
+### 远程仓库
+```bash
+# 在 registry 中搜索镜像
+$ docker search [query]
+
+# 从 registry 中获取镜像 （若无指定 tag 名称，则默认使用 latest 这个 tag）
+$ docker pull [imageName]
+
+# 把本地 image 上传到 registry 中 (此时会把所有 tag 都上传上去)
+$ docker push [imageName]
+```
+
+## Container
+
+### 创建
+
+```bash
+# 创建 container
+$ docker create
+
+# 创建并运行 container
+$ docker run [image]
+
+# 创建并运行 container 后进入其 bash 控制台
+$ docker run -t -i [image] /bin/bash
+
+# 创建并运行 container 并让其在后台运行，并端口映射
+# docker run -p [port in container]:[port in physical system] -d [image] [command]
+$ docker container run -p 4000:8081  hello-world
+```
+
+### 查看
+
+```bash
+# 查看正在运行的所有 container 信息
+$ docker ps
+
+# 查看最后创建的 container
+$ docker ps -l
+
+# 查看所有 container ，包括正在运行和已经关闭的
+$ docker ps -a
+
+# 输出指定 container 的 stdout 信息（用来看 log ，效果和 tail -f 类似，会实时输出。）
+$ docker logs -f [container]
+
+# 获取 container 指定端口映射关系
+$ docker port [container] [port]
+
+# 查看 container 进程列表
+$ docker top [container]
+
+# 查看 container 详细信息
+$ docker inspect [container]
+```
+### 操作
+```bash
+# 停止 continer
+$ docker stop [container]
+
+# 强制停止 container
+$ docker kill [container]
+
+# 启动一个已经停止的 container
+$ docker start [container]
+
+# 重启 container (若 container 处于关闭状态，则直接启动)
+$ docker restart [container]
+
+# 删除 container
+$ docker rm [container]
+```
+
+## 进入容器交互模式
+
+```bash
+$ docker exec -it <CONTAINER NAME> /bin/bash
+```

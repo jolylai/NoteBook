@@ -19,14 +19,14 @@ module.exports = {
       collapsable: false,
       children: ["", "gh-pages", "server"]
     }
+  ],
+  "/devops/linux/": [
+    {
+      title: "Linux",
+      collapsable: false,
+      children: [""]
+    }
   ]
-  // "/devops/linus/": [
-  //   {
-  //     title: "MongoDB",
-  //     collapsable: false,
-  //     children: [""]
-  //   }
-  // ],
   // "/devops/nginx/": [
   //   {
   //     title: "MongoDB",
