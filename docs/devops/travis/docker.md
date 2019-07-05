@@ -1,3 +1,19 @@
+# Docker
+
+## 登录 docker hub
+
+```bash
+# 登录docker hub
+$ docker login -u "$REGISTRY_USER" -p "$REGISTRY_PASS"
+
+# 生成镜像
+$ docker build --tag jolylai/notebook .
+
+# 推送镜像到 docker hub
+$ docker push jolylai/notebook
+```
+
+```yml
 language: node_js
 node_js: stable
 sudo: required
@@ -28,3 +44,4 @@ after_script:
 after_success:
   - chmod 600 ~/.ssh/id_rsa
   - ssh root@106.12.140.131 -o StrictHostKeyChecking=no 'docker pull jolylai/notebook && docker run -d -p 80:80'
+```

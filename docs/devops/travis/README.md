@@ -16,11 +16,15 @@
 - `after_script`
 
 ## 模板
+
 ```yaml
 language: node_js
 node_js: 8
 cache:
   directories: node_modules
+sudo: required
+services:
+  - docker
 branches:
   only:
     - master
@@ -34,16 +38,16 @@ before_install:
 install:
   - yarn install
 before_script:
-  - 
+  -
 script:
   - yarn run docs:build
-before_cache: 
-  - 
+before_cache:
+  -
 after_success:
   - scp -o stricthostkeychecking=no -r docs/.vuepress/dist root@106.12.140.131:/root
 after_failure:
   -
-before_deploy: 
+before_deploy:
   -
 deploy:
   provider: pages
@@ -55,6 +59,7 @@ deploy:
     branch: master
 after_deploy:
   - yarn run notification
-after_script:
-  -
+  # 执行服务器上的命令
+  - ssh root@106.12.140.131 -o StrictHostKeyChecking=no 'docker pull jolylai/notebook && docker run -d -p 80:80'
+after_script: -
 ```
