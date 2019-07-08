@@ -10,7 +10,12 @@ module.exports = {
     {
       title: "Docker",
       collapsable: false,
-      children: ["start", "install", "deploy"]
+      children: ["start", "install"]
+    },
+    {
+      title: "Deploy",
+      collapsable: false,
+      children: ["react", "express"]
     }
   ],
   "/devops/travis/": [
@@ -27,11 +32,4 @@ module.exports = {
       children: ["", "nginx"]
     }
   ]
-  // "/devops/nginx/": [
-  //   {
-  //     title: "MongoDB",
-  //     collapsable: false,
-  //     children: ["schema", "model"]
-  //   }
-  // ]
 };
