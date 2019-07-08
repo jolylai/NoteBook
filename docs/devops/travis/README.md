@@ -19,6 +19,8 @@
 
 ### 添加授信主机
 
+部署项目到自己服务器的时候需要添加
+
 ```yaml
 addons:
   ssh_known_hosts: 106.12.140.131
@@ -35,6 +37,13 @@ deploy:
   local_dir: docs/.vuepress/dist
   on:
     branch: master
+```
+
+### 缓存
+
+```yaml
+cache:
+  directories: node_modules
 ```
 
 ## 模板
