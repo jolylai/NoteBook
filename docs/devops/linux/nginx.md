@@ -257,3 +257,10 @@ http {
   }
 }
 ```
+
+## 重启
+
+```bash
+$ sudo systemctl start nginx
+$ sudo systemctl reload nginx
+```

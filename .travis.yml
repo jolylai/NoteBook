@@ -24,4 +24,4 @@ deploy:
     branch: master
 after_success:
   - chmod 600 ~/.ssh/id_rsa
-  - scp -o stricthostkeychecking=no -r docs/.vuepress/dist/ root@"$HOST":/var/www/html/
+  - scp -o stricthostkeychecking=no -r docs/.vuepress/dist/ root@"$HOST":/var/www/notebook/
