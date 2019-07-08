@@ -67,3 +67,28 @@ http {
     }
 }
 ```
+
+## 创建 Dockerfile
+
+```docker
+FROM nginx:1.15.2-alpine
+COPY ./build /var/www
+COPY nginx.conf /etc/nginx/nginx.conf
+EXPOSE 80
+ENTRYPOINT ["nginx","-g","daemon off;"]
+```
+
+- 把打包出来的文件复制到容器内的 `/var/www`
+- 把 nginx 的配置文件`nginx.conf`复制到容器内的 `/etc/nginx/nginx.conf`
+
+## 创建镜像
+
+```bash
+$ docker build --rm -f Dockerfile -t docker-react:latest .
+```
+
+## 创建容器
+
+```bash
+docker run --rm -d -p 80:80 docker-react:latest
+```

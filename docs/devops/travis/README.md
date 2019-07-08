@@ -65,7 +65,7 @@ before_install:
   - openssl aes-256-cbc -K $encrypted_2a01126f8b17_key -iv $encrypted_2a01126f8b17_iv
     -in id_rsa.enc -out ~/.ssh/id_rsa -d
   - chmod 600 ~/.ssh/id_rsa
-  - echo -e "Host 106.12.140.131\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - echo -e "Host $HOST\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 install:
   - yarn install
 before_script:
@@ -75,7 +75,7 @@ script:
 before_cache:
   -
 after_success:
-  - scp -o stricthostkeychecking=no -r docs/.vuepress/dist root@106.12.140.131:/root
+  - scp -o stricthostkeychecking=no -r docs/.vuepress/dist root@"$HOST":/root
 after_failure:
   -
 before_deploy:
@@ -91,6 +91,6 @@ deploy:
 after_deploy:
   - yarn run notification
   # 执行服务器上的命令
-  - ssh root@106.12.140.131 -o StrictHostKeyChecking=no 'docker pull jolylai/notebook && docker run -d -p 80:80'
+  - ssh root@"$HOST" -o StrictHostKeyChecking=no 'docker pull jolylai/notebook && docker run -d -p 80:80'
 after_script: -
 ```
