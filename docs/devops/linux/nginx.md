@@ -5,6 +5,7 @@
 ### Ubuntu
 
 ```bash
+$ sudo apt-get update
 $ sudo apt-get install nginx
 ```
 
@@ -16,14 +17,52 @@ $ sudo apt-get install nginx
 - 并已经在`/etc/init.d/`下创建了启动脚本 nginx
 - 默认的虚拟主机的目录设置在了`/var/www/nginx-default` (有的版本 默认的虚拟主机的目录设置在了/var/www, 请参考/etc/nginx/sites-available 里的配置)
 
-## 启动
+## 上传静态文件到服务器
 
 ```bash
-$ sudo /etc/init.d/nginx start
+$ scp -r * root@198.199.103.100:/var/www/jgefroh.com
 ```
 
+## 配置 nginx
+
+`cd` 到 `/etc/nginx` 这里存放 nginx 配置文件
+
 - 默认的目录为 `/var/www/html/`
-- 默认配置 `/etc/default/nginx`
+- 默认配置 `/etc/nginx`
+
+关注 `sites-available` 和 `sites-enabled` 这两个文件夹
+
+- `sites-available` contains individual configuration files for all of your possible static websites.
+- `sites-enabled` contains links to the configuration files that NGINX will actually read and run.
+
+在`sites-available` 文件夹中 创建 `jgefroh.com` 文件
+
+```nginx
+server {
+  listen 8000 default_server;
+  listen [::]:8000 default_server;
+  root /var/www/jgefroh.com;
+  index index.html;
+  server_name _;
+  location / {
+    try_files $uri $uri/ =404;
+  }
+}
+```
+
+将文件添加到`sites-enabled`以此告诉 nginx 来启用我们的配置
+
+```bash
+ln -s <SOURCE_FILE> <DESTINATION_FILE>
+
+ln -s /etc/nginx/sites-available/jgefroh.com /etc/nginx/sites-enabled/jgefroh.com
+```
+
+重启 nginx 并查看效果
+
+```bash
+$ sudo systemctl restart nginx
+```
 
 ## nginx 配置文件
 
