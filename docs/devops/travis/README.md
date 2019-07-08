@@ -15,6 +15,28 @@
 - OPTIONAL `after_deploy`
 - `after_script`
 
+## 常用配置
+
+### 添加授信主机
+
+```yaml
+addons:
+  ssh_known_hosts: 106.12.140.131
+```
+
+### 部署到 gh-pages
+
+```yaml
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  local_dir: docs/.vuepress/dist
+  on:
+    branch: master
+```
+
 ## 模板
 
 ```yaml

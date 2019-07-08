@@ -24,7 +24,7 @@ module.exports = {
     {
       title: "Linux",
       collapsable: false,
-      children: [""]
+      children: ["", "nginx"]
     }
   ]
   // "/devops/nginx/": [
