@@ -4,8 +4,6 @@ sudo: required
 branches:
   only:
     - master
-cache:
-  directories: node_modules
 before_install:
   - openssl aes-256-cbc -K $encrypted_5fcb8b10af91_key -iv $encrypted_5fcb8b10af91_iv
     -in id_rsa.enc -out ~/.ssh/id_rsa -d
