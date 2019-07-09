@@ -24,7 +24,9 @@ deploy:
     branch: master
 after_deploy:
   - cd docs/.vuepress/dist/
-  - zip -r dist.zip .
+  - pwd
+  - ls -a
+  - zip -r dist.zip ./*
   - pwd
   - ls -a
   - chmod 600 ~/.ssh/id_rsa
