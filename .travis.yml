@@ -27,4 +27,4 @@ after_deploy:
   - chmod 600 ~/.ssh/id_rsa
   - ssh root@"$HOST" -o StrictHostKeyChecking=no 'rm -rf /var/www/notebook/ && mkdir /var/www/notebook/'
   - scp -o stricthostkeychecking=no -r docs/.vuepress/dist/dist.zip root@"$HOST":/var/www/notebook/
-  - ssh root@"$HOST" -o StrictHostKeyChecking=no 'unzip /var/www/notebook/dist.zip'
+  - ssh root@"$HOST" -o StrictHostKeyChecking=no 'unzip -o -d /var/www/notebook/ /var/www/notebook/dist.zip'
