@@ -25,6 +25,8 @@ deploy:
 after_deploy:
   - cd docs/.vuepress/dist/
   - zip -r dist.zip .
+  - pwd
+  - ls -a
   - chmod 600 ~/.ssh/id_rsa
   - ssh root@"$HOST" -o StrictHostKeyChecking=no 'rm -rf /var/www/notebook/ && mkdir /var/www/notebook/'
   - scp -o stricthostkeychecking=no -r docs/.vuepress/dist/dist.zip root@"$HOST":/var/www/notebook/
