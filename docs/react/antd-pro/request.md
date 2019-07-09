@@ -52,6 +52,20 @@ const errorHandler = error => {
  * 配置request请求时的默认参数
  */
 request.interceptors.request.use((url, options) => {
+  const { downloadImgs } = options;
+  if (downloadImgs) {
+    return {
+      // eslint-disable-next-line
+      url: isUrl(url) ? url : `${baseURL}${url}`,
+      options: {
+        ...options,
+        params: {
+          ...options.params,
+          contentType: "application/json;charset=utf-8"
+        }
+      }
+    };
+  }
   return {
     // eslint-disable-next-line
     url: isUrl(url) ? url : `${baseURL}${url}`,
@@ -59,7 +73,12 @@ request.interceptors.request.use((url, options) => {
   };
 });
 
-request.interceptors.response.use(async response => {
+request.interceptors.response.use(async (response, options) => {
+  const { responseType } = options;
+  if (responseType && responseType !== "json") {
+    return response;
+  }
+
   const data = await response.clone().json();
 
   if (data.status && data.status !== 200) {

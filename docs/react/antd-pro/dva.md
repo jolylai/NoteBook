@@ -164,3 +164,39 @@ export const pageModel = modelExtend(model, {
   }
 });
 ```
+
+## dva-logger
+
+安装 `dva-logger`
+
+```bash
+$ yarn add dva-logger --dev
+```
+
+在 `src` 目录下新建 `app.js`，内容如下：
+
+```js
+/* eslint-disable */
+import { message } from "antd";
+
+const plugins = [];
+
+// 非生产环境添加 logger
+if (process.env.NODE_ENV !== "production") {
+  plugins.push(
+    require("dva-logger")({
+      collapsed: true
+    })
+  );
+}
+
+export const dva = {
+  config: {
+    onError(e) {
+      e.preventDefault();
+      message.error(e.message);
+    }
+  },
+  plugins
+};
+```

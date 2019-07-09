@@ -24,7 +24,7 @@ module.exports = {
     {
       title: "Ant Design Pro",
       collapsable: false,
-      children: ["", "dva", "block", "file-saver", 'env']
+      children: ["", "dva", "block", "file-saver", "env", "request", "regexp"]
     }
   ],
   "/react/pomelo-ui/": [

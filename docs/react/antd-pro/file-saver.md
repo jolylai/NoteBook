@@ -41,3 +41,11 @@ export function saveAsPPT(data, fileName) {
   saveAs(blobData, fileName);
 }
 ```
+
+## 图片下载
+
+```js
+FileSaver.saveAs("https://httpbin.org/image", "image.jpg");
+```
+
+先检查服务器是否支持跨域请求，如果支持则使用 blob URLs 保存数据，如果不支持跨域则使用 `a[download]`
