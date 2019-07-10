@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[152],{245:function(n,t,e){},294:function(n,t,e){"use strict";var i=e(245);e.n(i).a},414:function(n,t,e){"use strict";e.r(t);e(294);var i=e(0),s=Object(i.a)({},function(){var n=this.$createElement;return(this._self._c||n)("main",[this._v("Multiple borders!")])},[],!1,null,"1797dd36",null);t.default=s.exports}}]);
