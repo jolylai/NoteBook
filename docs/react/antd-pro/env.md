@@ -1,11 +1,85 @@
 # 多环境配置
 
-## config
+## cross-env
 
-config/config.cloud.js + config/config.prod.js + config/config.js .
+配置 `package.json`
+
+```json {3}
+{
+  "scripts": {
+    "dev": "cross-env MOCK=none ENV_TAG=dev umi dev"
+  }
+}
+```
+
+启动项目
+
+```bash
+$ yarn run dev
+```
+
+这时你在项目中的所有的 js 文件中可以通过以下命令获取到自己定义的变量
 
 ```js
-// https://umijs.org/config/
+const { NODE_ENV, TEST, ENV_TAG } = process.env;
+
+let baseURL = "/api";
+
+if (ENV_TAG === "dev") {
+  baseURL = "http://serp-dev.linesum.com/api";
+}
+
+if (ENV_TAG === "qa") {
+  baseURL = "/api";
+}
+
+if (ENV_TAG === "production") {
+  baseURL = "/api";
+}
+
+export default {
+  // 通过 webpack 的 DefinePlugin 传递给代码，值会自动做 JSON.stringify 处理。
+  define: {
+    baseURL
+  }
+};
+```
+
+## 不同 config 文件
+
+在不同的环境下我们需要不同的配置，这时我们可以在 config 文件夹中创建不同环境下使用的配置文件，比如我们需要 `dev`, `qa`, `prod`,三个不同的换件，这时可以在根目录下的 config 文件夹中创建
+分别创建`config.dev.js` ,`config.qa.js` ,`config.prod.js`
+
+配置 `package.json`
+
+```json {3,4,5}
+{
+  "scripts": {
+    "dev": "cross-env UMI_ENV=dev umi dev",
+    "qa": "cross-env UMI_ENV=qa umi dev",
+    "prod": "cross-env UMI_ENV=prod umi build"
+  }
+}
+```
+
+这时我们使用不同环境时只需要执行对应的命名就可以了
+
+```bash
+# dev 环境
+$ yarn run dev
+
+# qa 环境
+$ yarn run qa
+
+# prod 环境
+$ yarn run prod
+```
+
+## config 文件
+
+可以根据以下面的代码为模板配置不同环境，更多的配置可以参考[官方文档](https://umijs.org/config/)
+
+```js
 import os from "os";
 import slash from "slash2";
 import defaultSettings from "./defaultSettings";
@@ -93,17 +167,15 @@ export default {
   },
   // 路由配置
   routes: pageRouter,
-  // Theme for antd
-  // https://ant.design/docs/react/customize-theme-cn
   theme: {
     "primary-color": primaryColor
   },
-  // proxy: {
-  //   '/api/': {
-  //     target: 'http://coordinate-dev.linesum.com/api',
-  //     changeOrigin: true,
-  //   },
-  // },
+  proxy: {
+    '/api/': {
+      target: 'http://****',
+      changeOrigin: true,
+    },
+  },
   ignoreMomentLocale: true,
   lessLoaderOptions: {
     javascriptEnabled: true
@@ -140,13 +212,4 @@ export default {
   uglifyJSOptions,
   chainWebpack: webpackPlugin
 };
-```
-
-## package.json
-
-```json
-{
-  "start": "cross-env UMI_ENV=cloud APP_TYPE=site umi dev",
-  "build": "cross-env UMI_ENV=prod umi build"
-}
 ```

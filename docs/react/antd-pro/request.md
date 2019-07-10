@@ -1,10 +1,8 @@
 # 网络请求
 
+更详细的 [api 文档](https://github.com/umijs/umi-request)
+
 ```js
-/**
- * request 网络请求工具
- * 更详细的 api 文档: https://github.com/umijs/umi-request
- */
 import request, { extend } from "umi-request";
 import { isUrl } from "@/utils/utils";
 import { notification, message } from "antd";
@@ -26,10 +24,10 @@ const codeMessage = {
   503: "服务不可用，服务器暂时过载或维护。",
   504: "网关超时。"
 };
+
 /**
  * 异常处理程序
  */
-
 const errorHandler = error => {
   const { response = {} } = error;
 
@@ -48,24 +46,11 @@ const errorHandler = error => {
     description: errortext
   });
 };
+
 /**
  * 配置request请求时的默认参数
  */
 request.interceptors.request.use((url, options) => {
-  const { downloadImgs } = options;
-  if (downloadImgs) {
-    return {
-      // eslint-disable-next-line
-      url: isUrl(url) ? url : `${baseURL}${url}`,
-      options: {
-        ...options,
-        params: {
-          ...options.params,
-          contentType: "application/json;charset=utf-8"
-        }
-      }
-    };
-  }
   return {
     // eslint-disable-next-line
     url: isUrl(url) ? url : `${baseURL}${url}`,
@@ -73,6 +58,7 @@ request.interceptors.request.use((url, options) => {
   };
 });
 
+// 网络请求响应报错统一提示
 request.interceptors.response.use(async (response, options) => {
   const { responseType } = options;
   if (responseType && responseType !== "json") {
@@ -89,13 +75,16 @@ request.interceptors.response.use(async (response, options) => {
   return response;
 });
 
+// 请求头
+const headers = {
+  "X-Requested-With": "XMLHttpRequest"
+};
+
 const newRequest = extend({
   errorHandler,
-  // 默认错误处理
-  headers: {
-    "X-Requested-With": "XMLHttpRequest"
-  },
-  credentials: "include" // 默认请求是否带上cookie
+  headers,
+  // 默认请求是否带上cookie
+  credentials: "include"
 });
 
 export default newRequest;
