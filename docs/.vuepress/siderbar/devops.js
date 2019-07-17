@@ -22,7 +22,7 @@ module.exports = {
     {
       title: "Travis",
       collapsable: false,
-      children: ["", "gh-pages", "server"]
+      children: ["", "gh-pages", "server", "sh"]
     }
   ],
   "/devops/linux/": [

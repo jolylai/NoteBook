@@ -23,7 +23,7 @@
 
 ```yaml
 addons:
-  ssh_known_hosts: 106.12.140.131
+  ssh_known_hosts: 106.12.140
 ```
 
 ### 部署到 gh-pages
@@ -46,6 +46,22 @@ cache:
   directories: node_modules
 ```
 
+### 文件压缩并上传至服务器
+
+使用了一下，经常遇到 scp 很或者失败的问题
+
+```yaml
+after_deploy:
+  - cd public/
+  - zip -r dist.zip .
+  - chmod 600 ~/.ssh/id_rsa
+  - ssh root@"$HOST" -o StrictHostKeyChecking=no 'rm -rf /var/www/happy-little-stack/ && mkdir /var/www/happy-little-stack/'
+  - scp -o stricthostkeychecking=no -r dist.zip root@"$HOST":/var/www/happy-little-stack/
+  - ssh root@"$HOST" -o StrictHostKeyChecking=no 'unzip -o -d /var/www/happy-little-stack /var/www/happy-little-stack/dist.zip'
+  - cd ..
+  - yarn run notification
+```
+
 ## 模板
 
 ```yaml
@@ -60,7 +76,7 @@ branches:
   only:
     - master
 addons:
-  ssh_known_hosts: 106.12.140.131
+  ssh_known_hosts: 106.12.140
 before_install:
   - openssl aes-256-cbc -K $encrypted_2a01126f8b17_key -iv $encrypted_2a01126f8b17_iv
     -in id_rsa.enc -out ~/.ssh/id_rsa -d
