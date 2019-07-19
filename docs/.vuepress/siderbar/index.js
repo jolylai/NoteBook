@@ -1,18 +1,8 @@
 const cssSiderbar = require("./css");
 const jsSiderbar = require("./javascript");
-const reactSidebar = require("./react");
-const nodejsSiderbar = require("./nodejs");
-const devopsSiderbar = require("./devops");
 const toolsSiderbar = require("./tools");
 
-module.exports = Object.assign(
-  cssSiderbar,
-  jsSiderbar,
-  reactSidebar,
-  nodejsSiderbar,
-  devopsSiderbar,
-  toolsSiderbar
-);
+module.exports = Object.assign(cssSiderbar, jsSiderbar, toolsSiderbar);
 
 //  getCssSiderBar(
 //   "CSS基础",

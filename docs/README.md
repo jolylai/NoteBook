@@ -3,15 +3,23 @@ home: true
 heroImage: /hero.jpg
 actionText: 快速上手 →
 actionLink: /css/
-features:
-  - title: 简洁至上
-    details: 简洁的语言，清晰的思路。
-  - title: Demo
-    details: 例子配上相应的Demo，更好的了解问题解决问题。
-  - title: 学习链
-    details: 以一个点去学习以此点扩展出来的知识点。
 footer: Copyright © 2018-present Jolylai
 ---
+
+<div class="features">
+  <a class="feature" href='https://jolylai.github.io/notebook-js' target="_blank" rel="noopener noreferrer">
+    <h2>JavaScript</h2>
+    <p>JavaScript 笔记</p>
+  </a>
+  <a class="feature" href='https://jolylai.github.io/notebook-nodejs' target="_blank" rel="noopener noreferrer">
+    <h2>Nodejs</h2>
+    <p>Nodejs 笔记</p>
+  </a>
+  <a class="feature" href='https://jolylai.github.io/notebook-devops' target="_blank" rel="noopener noreferrer">
+    <h2>Devops</h2>
+    <p>部署、持续构建相关笔记</p>
+  </a>
+</div>
 
 ## Learning
 
