@@ -2,14 +2,26 @@
 home: true
 heroImage: /hero.jpg
 actionText: 快速上手 →
-actionLink: /css/
+actionLink: /tools/
 footer: Copyright © 2018-present Jolylai
 ---
 
 <div class="features">
+  <a class="feature" href='https://jolylai.github.io/notebook-css' target="_blank" rel="noopener noreferrer">
+    <h2>CSS</h2>
+    <p>CSS 笔记</p>
+  </a>
   <a class="feature" href='https://jolylai.github.io/notebook-js' target="_blank" rel="noopener noreferrer">
     <h2>JavaScript</h2>
     <p>JavaScript 笔记</p>
+  </a>
+  <a class="feature" href='https://jolylai.github.io/notebook-lodash' target="_blank" rel="noopener noreferrer">
+    <h2>Lodash</h2>
+    <p>Lodash 笔记</p>
+  </a>
+  <a class="feature" href='https://jolylai.github.io/notebook-react' target="_blank" rel="noopener noreferrer">
+    <h2>React</h2>
+    <p>React 笔记</p>
   </a>
   <a class="feature" href='https://jolylai.github.io/notebook-nodejs' target="_blank" rel="noopener noreferrer">
     <h2>Nodejs</h2>
@@ -21,13 +33,17 @@ footer: Copyright © 2018-present Jolylai
   </a>
 </div>
 
+## GitHub
+
+- [Notebook JS](https://github.com/jolylai/notebook-js)
+
 ## Learning
 
 - [30 seconds of code](https://30secondsofcode.org/)
 - [前端早报](https://github.com/sorrycc/zaobao/issues)
 - [react-router](https://reacttraining.com/react-router/)
 
-## 2019 Todo List
+## Todo
 
 - 基础
 
@@ -48,15 +64,10 @@ footer: Copyright © 2018-present Jolylai
 - Nodejs
 
   - [Nodejs](https://juejin.im/post/5c1f8e52f265da6170071e43)
-  - [express](https://expressjs.com/)
   - Koa
 
 - 部署
-
-  - docker
-  - [nginx](http://jspang.com/post/nginx.html)
-
-- 常用正则表达式
+  - [nginx](http://www.jspang.com/posts/2018/10/05/nginx.html)
 
 ## Roadmap
 
