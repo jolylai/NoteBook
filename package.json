@@ -4,9 +4,17 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "vuepress": "0.14.10"
+    "vuepress": "^1.2.0"
   },
   "devDependencies": {
+    "husky": "^3.0.9",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
     "vuepress-plugin-demo-block": "^0.7.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
