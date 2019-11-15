@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{156:function(n,t,e){"use strict";var i=e(42);e.n(i).a},330:function(n,t,e){"use strict";e.r(t);e(156);var i=e(0),s=Object(i.a)({},function(){var n=this.$createElement;return(this._self._c||n)("main",[this._v("trapezoid")])},[],!1,null,"4f9de346",null);t.default=s.exports},42:function(n,t,e){}}]);
