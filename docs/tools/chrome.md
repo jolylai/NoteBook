@@ -1,5 +1,7 @@
 # Chrome 插件
 
+> [极简插件](https://chrome.zzzmh.cn/index#index)
+
 ## GitHub
 
 - [OctoLinker](https://github.com/OctoLinker/OctoLinker) — Links together, what belongs together

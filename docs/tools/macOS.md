@@ -10,7 +10,6 @@
 安装
 
 ```bash
-
 cd ~/Downloads && git clone https://github.com/CodeTips/BaiduNetdiskPlugin-macOS.git && ./BaiduNetdiskPlugin-macOS/Other/Install.sh
 ```
 
