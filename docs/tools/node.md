@@ -90,3 +90,13 @@ nrm list // show all registries
 nrm use cnpm // switch to cnpm
 nrm home // go to a registry home page
 ```
+
+## 二维码生成
+
+> [qrcode-terminal](https://github.com/gtanner/qrcode-terminal)
+
+```bash
+$ npm install -g qrcode-terminal
+$ qrcode-terminal --help
+$ qrcode-terminal 'http://github.com'
+```
