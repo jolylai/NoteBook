@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{161:function(n,t,e){"use strict";var i=e(47);e.n(i).a},371:function(n,t,e){"use strict";e.r(t);e(161);var i=e(0),s=Object(i.a)({},function(){var n=this.$createElement;return(this._self._c||n)("main",[this._v("平行四边形")])},[],!1,null,"20932ef4",null);t.default=s.exports},47:function(n,t,e){}}]);
