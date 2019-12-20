@@ -2,13 +2,29 @@
 
 For more Awesome libs reference [sorrycc/awesome-f2e-libs](https://github.com/sorrycc/awesome-f2e-libs)
 
-## Nodejs
+## 工具类
 
 - [bcrypt](https://github.com/kelektiv/node.bcrypt.js) - A library to help you hash passwords.
 - [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) - An implementation of JSON Web Tokens.
 - [pm2](https://github.com/Unitech/pm2) - Node.js Production Process Manager with a built-in Load Balancer.
+- [medium-zoom](https://github.com/francoischalifour/medium-zoom)
+  r development
+- [FileSaver](https://github.com/eligrey/FileSaver.js) - An HTML5 saveAs() FileSaver implementation
+- [qrocde](https://github.com/soldair/node-qrcode) - qr code generator
+- [nodemailer](https://github.com/nodemailer/nodemailer) - ✉️ Send e-mails with Node.JS easy as cake!
+- [history](https://github.com/ReactTraining/history)
+- [lodash](https://github.com/lodash/lodash)
+- [fastclick](https://github.com/ftlabs/fastclick)
+- [nzh](https://www.npmjs.com/package/nzh) - 阿拉伯数字与中文数字
+- [omit](https://www.npmjs.com/package/omit) - 剔除对象总指定的 key
+- [prismjs](https://prismjs.com/) - 代码高亮
+- [PicGo](https://molunerfinn.com/PicGo/) - 图片上传+管理新体验
+  通过 yarn global add 安装
+- [nodemon](https://github.com/remy/nodemon) - onitor for any changes in your node.js application and automatically restart the server
+- [qrcode-terminal](https://github.com/gtanner/qrcode-terminal) - 二维码生成
+- [serve](https://github.com/zeit/serve) - 本地静态服务器
 
-## Url
+Url
 
 - [qs](https://github.com/ljharb/qs) - A querystring parsing and stringifying library with some added security.
 - [Path-to-RegExp](https://github.com/pillarjs/path-to-regexp) - Turn a path string such as `/user/:name` into a regular expression.
@@ -17,11 +33,6 @@ For more Awesome libs reference [sorrycc/awesome-f2e-libs](https://github.com/so
 
 - [GACP](https://github.com/vivaxy/gacp)
 - [gitmoji](https://github.com/carloscuesta/gitmoji)
-
-## 包管理
-
-- [yarn](https://github.com/yarnpkg/yarn) - 我用这个。
-- [npm](https://github.com/npm/cli)
 
 ## 框架
 
@@ -45,23 +56,11 @@ For more Awesome libs reference [sorrycc/awesome-f2e-libs](https://github.com/so
 - [router5](https://github.com/router5/router5) - 通用的路由方案。
 - [react-loadable](https://github.com/jamiebuilds/react-loadable) - 按需加载 react 组件。
 - [ant-design](https://github.com/ant-design/ant-design) - 蚂蚁金服的 React UI 库。
-- [material-ui](https://github.com/mui-org/material-ui) - UI 库。
 - [react-intl](https://github.com/yahoo/react-intl) - React 的国际化方案。
 - [react-dnd](https://github.com/react-dnd/react-dnd) - 拖拽实现。
 - [react-helmet](https://github.com/nfl/react-helmet) - 修改 html 的 header 内容。
 - [react-media](https://github.com/ReactTraining/react-media) - CSS media query component for React.
 - [react-container-query](https://github.com/d6u/react-container-query)
-
-## 工具类
-
-- [history](https://github.com/ReactTraining/history)
-- [lodash](https://github.com/lodash/lodash)
-- [fastclick](https://github.com/ftlabs/fastclick)
-- [nzh](https://www.npmjs.com/package/nzh) - 阿拉伯数字与中文数字
-- [omit](https://www.npmjs.com/package/omit) - 剔除对象总指定的 key
-- [file-saver](https://www.npmjs.com/package/file-saver) - 文件导出
-- [path-to-regexp](https://www.npmjs.com/package/path-to-regexp) - 解析 url 路径 (Turn a path string such as /user/:name into a regular expression.)
-- [qs](https://www.npmjs.com/package/qs) - A querystring parsing and stringifying library with some added security.
 
 ## 数据流
 
@@ -136,6 +135,7 @@ For more Awesome libs reference [sorrycc/awesome-f2e-libs](https://github.com/so
 - [material](https://material-components.github.io/material-components-web-catalog/#/)
 - [semantic](https://semantic-ui.com/)
 - [antd](https://ant.design/index-cn)
+- [material-ui](https://github.com/mui-org/material-ui) - UI 库。
 
 ## 请求处理
 
@@ -151,13 +151,15 @@ For more Awesome libs reference [sorrycc/awesome-f2e-libs](https://github.com/so
 - [Eva Icons](https://github.com/akveo/eva-icons/)
 - [iconfont](https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a)
 
-## 视频
-
-- [山地人](http://space.bilibili.com/390120104)
-
-## 网站工具
+## 在线服务
 
 - [mockuphone](https://mockuphone.com/#iPhone-X)
+- [Mock](https://easy-mock.com)
+- [占位图](https://gradientjoy.com/)
+- [carbon](https://carbon.now.sh) - 生成美化代码图片
+- [tinypng](https://tinypng.com/) - 图片压缩网站
+- [在线工具](https://tool.lu/)
+- [regexper](https://regexper.com/) - 正则表达式图形解析
 
 ## 其他
 

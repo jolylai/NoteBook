@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /hero.jpg
+heroImage: /javascript.gif
 actionText: 快速上手 →
 actionLink: /tools/
 footer: Copyright © 2018-present Jolylai
@@ -33,6 +33,10 @@ footer: Copyright © 2018-present Jolylai
   </a>
 </div>
 
+## Reference
+
+[每日一题](https://muyiy.cn/)
+
 ## GitHub
 
 - [Notebook CSS](https://github.com/jolylai/notebook-css)
@@ -42,6 +46,6 @@ footer: Copyright © 2018-present Jolylai
 - [Notebook Devops](https://github.com/jolylai/notebook-devops)
 - [Notebook Lodash](https://github.com/jolylai/notebook-lodash)
 
-## Roadmap
+<!-- ## Roadmap
 
-<img :src="$withBase('/frontend.png')" alt="foo">
+<img :src="$withBase('/frontend.png')" alt="foo"> -->

@@ -1,4 +1,4 @@
-# Awesome
+# 学习资料
 
 ## 文章
 
@@ -9,19 +9,15 @@
 - [css-tricks](https://css-tricks.com/)
 - [Dan Abramov](https://overreacted.io/)
 
-## 开发工具
+## Github
 
-- [在线工具](https://tool.lu/)
-- [regexper](https://regexper.com/) - 正则表达式图形解析
-- [prismjs](https://prismjs.com/)
+- [Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist)
+- [javascript-algorithms](https://github.com/trekhleb/javascript-algorithms)
+- [33-js-concepts](https://github.com/leonardomso/33-js-concepts)
+- [awesome-javascript](https://github.com/sorrycc/awesome-javascript)
+- [nodebestpractices](https://github.com/i0natan/nodebestpractices)
 
-## 工具网站
+## 视频
 
-- [Mock](https://easy-mock.com)
-- [占位图](https://gradientjoy.com/)
-
-## 图片
-
-- [carbon](https://carbon.now.sh) - 生成美化代码图片
-- [tinypng](https://tinypng.com/) - 图片压缩网站
-- [PicGo](https://molunerfinn.com/PicGo/) - 图片上传+管理新体验
+- [山地人](http://space.bilibili.com/390120104)
+- [技术胖](http://www.jspang.com)

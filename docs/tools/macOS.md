@@ -1,5 +1,47 @@
 # MacOS
 
+## Homebrew
+
+> [Homebrew](https://brew.sh/)
+
+### 安装
+
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+更换清华源
+
+```bash
+git -C "$(brew --repo)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
+
+git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
+
+git -C "$(brew --repo homebrew/cask)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git
+
+brew update
+```
+
+复原
+
+```bash
+git -C "$(brew --repo)" remote set-url origin https://github.com/Homebrew/brew.git
+
+git -C "$(brew --repo homebrew/core)" remote set-url origin https://github.com/Homebrew/homebrew-core.git
+
+git -C "$(brew --repo homebrew/cask)" remote set-url origin https://github.com/Homebrew/homebrew-cask.git
+
+brew update
+```
+
+### 通过 homebrew 安装
+
+> [kap](https://github.com/wulkano/kap) -gif 视频录制
+
+```bash
+$ brew cask install kap
+```
+
 ## 百度网盘
 
 > [BaiduNetdiskPlugin](https://github.com/CodeTips/BaiduNetdiskPlugin-macOS)
@@ -33,37 +75,3 @@ cd /Applications/BaiduNetdisk_mac.app/Contents/MacOS/ && rm -rf BaiduNetdisk_mac
 - `github`：https://github.com/search?utf8=%E2%9C%93&q={query}
 - `maven`：http://mvnrepository.com/search?q={query}
 - `Android` API Search：https://developer.android.com/reference/classes.html#q={query}
-
-## Homebrew
-
-> [Homebrew](https://brew.sh/)
-
-安装
-
-```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-更换清华源
-
-```bash
-git -C "$(brew --repo)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
-
-git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
-
-git -C "$(brew --repo homebrew/cask)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git
-
-brew update
-```
-
-复原
-
-```bash
-git -C "$(brew --repo)" remote set-url origin https://github.com/Homebrew/brew.git
-
-git -C "$(brew --repo homebrew/core)" remote set-url origin https://github.com/Homebrew/homebrew-core.git
-
-git -C "$(brew --repo homebrew/cask)" remote set-url origin https://github.com/Homebrew/homebrew-cask.git
-
-brew update
-```

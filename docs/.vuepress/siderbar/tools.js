@@ -3,16 +3,12 @@ module.exports = {
     {
       title: "Tools",
       collapsable: false,
-      children: [
-        "",
-        "macOS",
-        "keyboardShortcuts",
-        "github",
-        "vscode",
-        "chrome",
-        "node",
-        "libs"
-      ]
+      children: ["", "libs"]
+    },
+    {
+      title: "装了啥",
+      collapsable: false,
+      children: ["macOS", "vscode", "chrome"]
     }
   ]
 };
