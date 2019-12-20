@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[18],{170:function(n,e,t){"use strict";var s=t(56);t.n(s).a},376:function(n,e,t){"use strict";t.r(e);t(170);var s=t(0),a=Object(s.a)({},function(){var n=this.$createElement;return(this._self._c||n)("main",[this._v("Center me, please!")])},[],!1,null,"4a2d5d06",null);e.default=a.exports},56:function(n,e,t){}}]);
