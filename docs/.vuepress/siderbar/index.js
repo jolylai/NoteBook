@@ -2,7 +2,7 @@ const cssSiderbar = require("./css");
 const jsSiderbar = require("./javascript");
 const toolsSiderbar = require("./tools");
 
-module.exports = Object.assign(cssSiderbar, jsSiderbar, toolsSiderbar);
+module.exports = Object.assign(toolsSiderbar);
 
 //  getCssSiderBar(
 //   "CSS基础",

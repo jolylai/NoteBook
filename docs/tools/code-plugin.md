@@ -1,26 +1,24 @@
-# VS Code
+# 插件
 
-## 插件
-
-### HTML
+## HTML
 
 - **Auto Close Tag**
 - **Auto Rename Tag**
 - **htmltagwrap**
 
-### CSS
+## CSS
 
 - **CSS Modules**
 - **Beautify** - Beautify javascript, JSON, CSS, Sass, and HTML in Visual Studio Code.
 - **Beautify css/sass/scss/less**
 
-### JS
+## JS
 
 - **Document This**
 - **ESLint**
 - **Prettier** - Code formatter
 
-### Editor
+## Editor
 
 - **GitLens**
 - **Live Server**
@@ -29,6 +27,6 @@
 - **Markdown All in One**
 - **REST Client** - Send HTTP request and view the response in Visual Studio Code directly.
 
-### Theme
+## Theme
 
 - **vscode-icons**

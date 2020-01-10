@@ -1,6 +1,11 @@
 module.exports = {
   "/tools/": [
     {
+      title: "VS Code",
+      collapsable: false,
+      children: ["code-shortcuts", "code-plugin"]
+    },
+    {
       title: "Tools",
       collapsable: false,
       children: ["", "libs"]
@@ -8,7 +13,7 @@ module.exports = {
     {
       title: "装了啥",
       collapsable: false,
-      children: ["macOS", "vscode", "chrome"]
+      children: ["macOS", "chrome"]
     }
   ]
 };

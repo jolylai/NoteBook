@@ -23,6 +23,9 @@ For more Awesome libs reference [sorrycc/awesome-f2e-libs](https://github.com/so
 - [nodemon](https://github.com/remy/nodemon) - onitor for any changes in your node.js application and automatically restart the server
 - [qrcode-terminal](https://github.com/gtanner/qrcode-terminal) - 二维码生成
 - [serve](https://github.com/zeit/serve) - 本地静态服务器
+- [gm](https://github.com/aheckmann/gm) - GraphicsMagick for node
+- [node-formidable](https://github.com/node-formidable/node-formidable) - A node.js module for parsing form data, especially file uploads.
+- [passport](https://github.com/jaredhanson/passport) - Simple, unobtrusive authentication for Node.js.
 
 Url
 
