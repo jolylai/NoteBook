@@ -6,26 +6,14 @@ cache:
 branches:
   only:
     - master
-addons:
-  ssh_known_hosts: "$HOST"
-before_install:
-  - openssl aes-256-cbc -K $encrypted_5fcb8b10af91_key -iv $encrypted_5fcb8b10af91_iv
-    -in id_rsa.enc -out ~/.ssh/id_rsa -d
 script:
   - yarn install
   - yarn run docs:build
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: "$GITHUB_TOKEN"
+  github-token: '$GITHUB_TOKEN'
   keep-history: true
-  local_dir: docs/.vuepress/dist
+  local_dir: dist
   on:
     branch: master
-after_deploy:
-  - cd docs/.vuepress/dist/
-  - zip -r dist.zip .
-  - chmod 600 ~/.ssh/id_rsa
-  - ssh root@"$HOST" -o StrictHostKeyChecking=no 'rm -rf /var/www/notebook/ && mkdir /var/www/notebook/'
-  - scp -o stricthostkeychecking=no -r dist.zip root@"$HOST":/var/www/notebook/
-  - ssh root@"$HOST" -o StrictHostKeyChecking=no 'unzip -o -d /var/www/notebook /var/www/notebook/dist.zip'

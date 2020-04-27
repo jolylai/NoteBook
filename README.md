@@ -1,3 +1,5 @@
+# Notebook
+
 <p align="center">
     <h1 align="center">NoteBook</h1>
     <p align="center">
@@ -19,3 +21,29 @@
 - [JS Note](https://jolylai.github.io/notebook/javascript/)
 - [React Note](https://jolylai.github.io/notebook/react/)
 - [Tools](https://jolylai.github.io/notebook/tools/)
+
+## Getting Started
+
+Install dependencies,
+
+```bash
+$ npm i
+```
+
+Start the dev server,
+
+```bash
+$ npm start
+```
+
+Build documentation,
+
+```bash
+$ npm run docs:build
+```
+
+Build library via `father-build`,
+
+```bash
+$ npm run build
+```

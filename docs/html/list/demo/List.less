@@ -1,0 +1,75 @@
+.list {
+  font-size: 1rem;
+
+  //   重置 ul 默认样式
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.list-item {
+  padding: 0.5em 1em;
+  border: 1px solid #dbdbdb;
+  display: block;
+
+  // a 列表
+  color: #495057;
+}
+
+// a 列表
+.list-item:hover {
+  color: #495057;
+}
+
+.list-item.active {
+  background-color: #0bffb0;
+}
+
+.list .list-item:first-child {
+  border-top-left-radius: 0.25em;
+  border-top-right-radius: 0.25em;
+}
+
+.list .list-item:last-child {
+  border-bottom-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+}
+
+.list .list-item:not(:first-child) {
+  margin-top: -1px;
+}
+
+// Header
+.list-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Conetent
+.list-content {
+  margin-bottom: 0.25em;
+}
+
+// 水平布局
+.list-horizontal {
+  display: flex;
+}
+
+.list-horizontal .list-item:not(:first-child) {
+  // 重置
+  margin-top: 0;
+  margin-left: -1px;
+}
+
+.list-horizontal .list-item:first-child {
+  border-top-left-radius: 0.25em;
+  border-bottom-left-radius: 0.25em;
+
+  border-top-right-radius: 0;
+}
+
+.list-horizontal .list-item:last-child {
+  border-top-right-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+
+  border-bottom-left-radius: 0;
+}
