@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  notebook:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: jolylai/notebook:latest
+    ports:
+      - '80:80'
