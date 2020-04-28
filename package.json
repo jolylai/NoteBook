@@ -1,14 +1,16 @@
 {
   "private": true,
-  "name": "dumi-lib",
+  "name": "@jolylai/notebook",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
     "build": "father-build",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
-    "test:coverage": "umi-test --coverage"
+    "test:coverage": "umi-test --coverage",
+    "bootstrap": "lerna bootstrap"
   },
+  "workspaces": ["packages/*"],
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
@@ -24,15 +26,6 @@
     ]
   },
   "dependencies": {
-    "@ant-design/icons": "^4.0.6",
-    "@ant-design/pro-layout": "^5.0.6",
-    "@ant-design/pro-table": "^2.1.6",
-    "@umijs/hooks": "^1.7.0",
-    "@umijs/preset-react": "1.x",
-    "@umijs/test": "^3.0.5",
-    "antd": "^4.1.2",
-    "axios": "^0.19.2",
-    "classnames": "^2.2.6",
     "dumi": "^1.0.19",
     "father-build": "^1.17.2",
     "lint-staged": "^10.0.7",
@@ -46,6 +39,10 @@
     "@testing-library/react-hooks": "^3.2.1",
     "@types/classnames": "^2.2.10",
     "@types/jest": "^25.1.4",
+
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.0.5",
+    "lerna": "^3.20.2",
     "react-test-renderer": "^16.13.1"
   }
 }

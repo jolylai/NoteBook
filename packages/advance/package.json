@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "version": "0.0.1",
+  "name": "@jolylai/notebook-advance",
+  "scripts": {
+    "start": "dumi dev",
+    "docs:build": "dumi build",
+    "build": "father-build",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "dependencies": {
+    "@umijs/hooks": "^1.9.2",
+    "antd": "^4.1.5",
+    "classnames": "^2.2.6"
+  },
+  "devDependencies": {}
+}

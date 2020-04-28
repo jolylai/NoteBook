@@ -1,0 +1,13 @@
+{
+  "packages": ["packages/*"],
+  "command": {
+    "version": {
+      "allowBranch": "master",
+      "includeMergedTags": true
+    }
+  },
+  "npmClient": "yarn",
+  "version": "0.0.1",
+  "useWorkspaces": true,
+  "lerna": "3.20.2"
+}
