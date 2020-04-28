@@ -1,6 +1,6 @@
 ---
 hero:
-  title: React
+  title: 前端工程化
   desc: 前端粉刷匠
   actions:
     - text: Getting Started
