@@ -13,8 +13,8 @@
 .DS_Store
 
 # umi
-/.cache
-/.umi
-/.umi-production
-/.umi-test
-/.env.local
+.cache
+.umi
+.umi-production
+.umi-test
+.env.local
