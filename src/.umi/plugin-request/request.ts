@@ -13,7 +13,7 @@ import { ApplyPluginsType } from 'umi';
 import { history, plugin } from '../core/umiExports';
             
 import { message, notification } from 'antd';
-import useUmiRequest from '/Users/laiguolin/Workspace/notebook/notebook/node_modules/@umijs/use-request';
+import useUmiRequest from '/Users/laiguolin/Workspace/notebook/notebook/node_modules/@umijs/plugin-request/node_modules/@umijs/use-request';
 import {
   BaseOptions,
   BasePaginatedOptions,
@@ -29,7 +29,7 @@ import {
   PaginatedOptionsWithFormat,
   PaginatedParams,
   PaginatedResult,
-} from '/Users/laiguolin/Workspace/notebook/notebook/node_modules/@umijs/use-request/lib/types';
+} from '/Users/laiguolin/Workspace/notebook/notebook/node_modules/@umijs/plugin-request/node_modules/@umijs/use-request/lib/types';
 
 type ResultWithData<T = any> = { data: T; [key: string]: any };
 
