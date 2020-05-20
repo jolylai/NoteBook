@@ -1,7 +1,7 @@
 import { createMemoryHistory, createHashHistory, createBrowserHistory } from '/Users/laiguolin/Workspace/notebook/notebook/node_modules/@umijs/runtime/dist/index.js';
 
 const options = {
-  "basename": "/"
+  "basename": "/notebook"
 };
 if ((<any>window).routerBase) {
   options.basename = (<any>window).routerBase;

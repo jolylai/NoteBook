@@ -155,7 +155,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/index.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "hero": {
             "title": "重学前端",
             "desc": "<div class=\"markdown\"><p>前端粉刷匠</p></div>",
@@ -207,7 +207,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/css/animation/index.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "title": "加载中",
           "nav": {
             "title": "CSS",
@@ -227,7 +227,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/css/box-model/background/index.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "title": "背景",
           "nav": {
             "title": "CSS",
@@ -258,7 +258,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/css/box-model/border/index.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "title": "边框",
           "nav": {
             "title": "CSS",
@@ -300,7 +300,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/css/box-model/content/index.md",
-          "updatedTime": null,
+          "updatedTime": 1589956505000,
           "title": "Content",
           "nav": {
             "title": "CSS",
@@ -327,7 +327,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/css/guide/index.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "title": "概览",
           "nav": {
             "title": "CSS",
@@ -369,7 +369,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/css/guide/spec.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "title": "规范",
           "nav": {
             "title": "CSS",
@@ -417,7 +417,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/css/layout/flex/index.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "title": "Flex",
           "nav": {
             "title": "CSS",
@@ -443,7 +443,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/css/layout/float/index.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "title": "浮动",
           "order": 1,
           "nav": {
@@ -516,7 +516,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/css/layout/responsive/index.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "title": "自适应",
           "nav": {
             "title": "CSS",
@@ -536,7 +536,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/css/user-experience/scrolling/index.md",
-          "updatedTime": null,
+          "updatedTime": 1589956505000,
           "title": "滚动",
           "nav": {
             "title": "CSS",
@@ -556,7 +556,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/design-patterns/index.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "title": "指南",
           "nav": {
             "title": "设计模式",
@@ -589,7 +589,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/design-patterns/creation/factory.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "title": "工厂模式",
           "nav": {
             "title": "设计模式",
@@ -640,7 +640,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/design-patterns/creation/singleton.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "title": "单例模式",
           "nav": {
             "title": "设计模式",
@@ -681,7 +681,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/html/button/index.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "title": "Button",
           "nav": {
             "title": "HTML",
@@ -738,7 +738,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/html/image/index.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "title": "Image",
           "nav": {
             "title": "HTML",
@@ -770,7 +770,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/html/list/index.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "title": "List",
           "nav": {
             "title": "HTML",
@@ -817,7 +817,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/html/semanteme/index.md",
-          "updatedTime": null,
+          "updatedTime": 1589956505000,
           "title": "semanteme",
           "nav": {
             "title": "HTML",
@@ -844,7 +844,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/js/async/promise.md",
-          "updatedTime": null,
+          "updatedTime": 1589956505000,
           "title": "Promise",
           "group": {
             "title": "异步",
@@ -885,7 +885,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/js/guide/array.md",
-          "updatedTime": null,
+          "updatedTime": 1589956505000,
           "title": "Array",
           "group": {
             "title": "指南",
@@ -1026,7 +1026,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/js/guide/call-apply-bind.md",
-          "updatedTime": null,
+          "updatedTime": 1589956505000,
           "title": "闭包",
           "group": {
             "title": "指南",
@@ -1057,7 +1057,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/js/guide/clean-code.md",
-          "updatedTime": null,
+          "updatedTime": 1589956505000,
           "title": "代码整洁",
           "group": {
             "title": "指南",
@@ -1084,7 +1084,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/js/guide/coercion.md",
-          "updatedTime": null,
+          "updatedTime": 1589956505000,
           "title": "强制类型转换",
           "group": {
             "title": "指南",
@@ -1135,7 +1135,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/js/guide/date.md",
-          "updatedTime": null,
+          "updatedTime": 1589956505000,
           "title": "Date",
           "group": {
             "title": "指南",
@@ -1206,7 +1206,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/js/guide/debounce.md",
-          "updatedTime": null,
+          "updatedTime": 1589956505000,
           "title": "防抖",
           "group": {
             "title": "指南",
@@ -1242,7 +1242,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/js/guide/index.md",
-          "updatedTime": null,
+          "updatedTime": 1589956505000,
           "slugs": [
             {
               "depth": 1,
@@ -1293,7 +1293,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/js/guide/microtasks.md",
-          "updatedTime": null,
+          "updatedTime": 1589956505000,
           "title": "microtasks",
           "group": {
             "title": "指南",
@@ -1359,7 +1359,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/js/guide/module.md",
-          "updatedTime": null,
+          "updatedTime": 1589956505000,
           "slugs": [
             {
               "depth": 1,
@@ -1385,7 +1385,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/js/guide/string.md",
-          "updatedTime": null,
+          "updatedTime": 1589956505000,
           "title": "String",
           "group": {
             "title": "指南",
@@ -1416,7 +1416,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/js/guide/throttle.md",
-          "updatedTime": null,
+          "updatedTime": 1589956505000,
           "title": "节流",
           "group": {
             "title": "指南",
@@ -1442,7 +1442,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/js/guide/types.md",
-          "updatedTime": null,
+          "updatedTime": 1589956505000,
           "title": "类型",
           "group": {
             "title": "指南",
@@ -1493,7 +1493,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/js/guide/utils.md",
-          "updatedTime": null,
+          "updatedTime": 1589956505000,
           "title": "工具函数",
           "group": {
             "title": "指南",
@@ -1544,7 +1544,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/tools/map.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "slugs": [
             {
               "depth": 1,
@@ -1576,7 +1576,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/tools/online.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "title": "在线工具",
           "slugs": [
             {
@@ -1628,7 +1628,7 @@ const routes = [
         "exact": true,
         "meta": {
           "filePath": "docs/tools/typescript.md",
-          "updatedTime": 1588041052000,
+          "updatedTime": 1589956505000,
           "slugs": [
             {
               "depth": 1,
