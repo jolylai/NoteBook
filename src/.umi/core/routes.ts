@@ -79,6 +79,11 @@ const routes = [
   },
   {
     "path": "/_demos/demo1-4",
+    "component": require('/Users/laiguolin/Workspace/notebook/notebook/docs/css/user-experience/dimming/demo/Demo1.tsx').default,
+    "exact": true
+  },
+  {
+    "path": "/_demos/demo1-5",
     "component": require('/Users/laiguolin/Workspace/notebook/notebook/docs/css/user-experience/scrolling/demo/Demo1.tsx').default,
     "exact": true
   },
@@ -143,9 +148,19 @@ const routes = [
     "exact": true
   },
   {
+    "path": "/_demos/demo2-2",
+    "component": require('/Users/laiguolin/Workspace/notebook/notebook/docs/css/user-experience/dimming/demo/Demo2.tsx').default,
+    "exact": true
+  },
+  {
+    "path": "/_demos/demo3-2",
+    "component": require('/Users/laiguolin/Workspace/notebook/notebook/docs/css/user-experience/dimming/demo/Demo3.tsx').default,
+    "exact": true
+  },
+  {
     "path": "/",
     "component": (props) => require('react').createElement(require('/Users/laiguolin/Workspace/notebook/notebook/node_modules/@umijs/preset-dumi/lib/themes/default/layout.js').default, {
-      ...{"menus":{"*":{"*":[{"path":"/","title":"全家桶","meta":{}}],"/css":[{"title":"概览","path":"/css/guide","meta":{"order":1},"children":[{"path":"/css/guide","title":"概览","meta":{}},{"path":"/css/guide/spec","title":"规范","meta":{}}]},{"title":"盒子模型","path":"/css/box-model","meta":{"order":10},"children":[{"path":"/css/box-model/background","title":"背景","meta":{}},{"path":"/css/box-model/border","title":"边框","meta":{}},{"path":"/css/box-model/content","title":"Content","meta":{}}]},{"title":"结构与布局","path":"/css/layout","meta":{"order":20},"children":[{"path":"/css/layout/float","title":"浮动","meta":{"order":1}},{"path":"/css/layout/flex","title":"Flex","meta":{}},{"path":"/css/layout/responsive","title":"自适应","meta":{}}]},{"title":"动画","path":"/css/animation","meta":{},"children":[{"path":"/css/animation","title":"加载中","meta":{}}]},{"title":"用户体验","path":"/css/user-experience","meta":{},"children":[{"path":"/css/user-experience/scrolling","title":"滚动","meta":{}}]}],"/design-patterns":[{"path":"/design-patterns","title":"指南","meta":{}},{"title":"创建型模式","path":"/design-patterns/creation","meta":{},"children":[{"path":"/design-patterns/creation/factory","title":"工厂模式","meta":{}},{"path":"/design-patterns/creation/singleton","title":"单例模式","meta":{}}]}],"/html":[{"title":"Button","path":"/html/button","meta":{},"children":[]},{"title":"Image","path":"/html/image","meta":{},"children":[]},{"title":"List","path":"/html/list","meta":{},"children":[]},{"title":"Semanteme","path":"/html/semanteme","meta":{},"children":[{"path":"/html/semanteme","title":"semanteme","meta":{}}]}],"/js":[{"title":"指南","path":"/js/guide","meta":{"order":1},"children":[{"path":"/js/guide","title":"Guide","meta":{}},{"path":"/js/guide/array","title":"Array","meta":{}},{"path":"/js/guide/call-apply-bind","title":"闭包","meta":{}},{"path":"/js/guide/clean-code","title":"代码整洁","meta":{}},{"path":"/js/guide/coercion","title":"强制类型转换","meta":{}},{"path":"/js/guide/date","title":"Date","meta":{}},{"path":"/js/guide/debounce","title":"防抖","meta":{}},{"path":"/js/guide/microtasks","title":"microtasks","meta":{}},{"path":"/js/guide/module","title":"模块化","meta":{}},{"path":"/js/guide/string","title":"String","meta":{}},{"path":"/js/guide/throttle","title":"节流","meta":{}},{"path":"/js/guide/types","title":"类型","meta":{}},{"path":"/js/guide/utils","title":"工具函数","meta":{}}]},{"title":"异步","path":"/jsasync","meta":{},"children":[{"path":"/jsasync/promise","title":"Promise","meta":{}}]}],"/tools":[{"path":"/tools/map","title":"地图","meta":{}},{"path":"/tools/online","title":"在线工具","meta":{}},{"path":"/tools/typescript","title":"TypeScript","meta":{}}]}},"locales":[],"navs":{"*":[{"title":"HTML","path":"/html","order":1},{"title":"CSS","path":"/css","order":20},{"title":"设计模式","path":"/design-patterns","order":30},{"path":"/js","title":"Js"},{"path":"/tools","title":"Tools"}]},"title":"橙柚","logo":"https://cy-picgo.oss-cn-hangzhou.aliyuncs.com/desktop.jpg","mode":"site"},
+      ...{"menus":{"*":{"*":[{"path":"/","title":"全家桶","meta":{}}],"/css":[{"title":"概览","path":"/css/guide","meta":{"order":1},"children":[{"path":"/css/guide","title":"概览","meta":{}},{"path":"/css/guide/spec","title":"规范","meta":{}}]},{"title":"盒子模型","path":"/css/box-model","meta":{"order":10},"children":[{"path":"/css/box-model/background","title":"背景","meta":{}},{"path":"/css/box-model/border","title":"边框","meta":{}},{"path":"/css/box-model/content","title":"Content","meta":{}}]},{"title":"结构与布局","path":"/css/layout","meta":{"order":20},"children":[{"path":"/css/layout/float","title":"浮动","meta":{"order":1}},{"path":"/css/layout/flex","title":"Flex","meta":{}},{"path":"/css/layout/responsive","title":"自适应","meta":{}}]},{"title":"动画","path":"/css/animation","meta":{},"children":[{"path":"/css/animation","title":"加载中","meta":{}}]},{"title":"用户体验","path":"/css/user-experience","meta":{},"children":[{"path":"/css/user-experience/dimming","title":"弱化背景","meta":{}},{"path":"/css/user-experience/scrolling","title":"滚动","meta":{}}]}],"/design-patterns":[{"path":"/design-patterns","title":"指南","meta":{}},{"title":"创建型模式","path":"/design-patterns/creation","meta":{},"children":[{"path":"/design-patterns/creation/factory","title":"工厂模式","meta":{}},{"path":"/design-patterns/creation/singleton","title":"单例模式","meta":{}}]}],"/html":[{"title":"Button","path":"/html/button","meta":{},"children":[]},{"title":"Image","path":"/html/image","meta":{},"children":[]},{"title":"List","path":"/html/list","meta":{},"children":[]},{"title":"Semanteme","path":"/html/semanteme","meta":{},"children":[{"path":"/html/semanteme","title":"semanteme","meta":{}}]}],"/js":[{"title":"指南","path":"/js/guide","meta":{"order":1},"children":[{"path":"/js/guide","title":"Guide","meta":{}},{"path":"/js/guide/array","title":"Array","meta":{}},{"path":"/js/guide/call-apply-bind","title":"闭包","meta":{}},{"path":"/js/guide/clean-code","title":"代码整洁","meta":{}},{"path":"/js/guide/coercion","title":"强制类型转换","meta":{}},{"path":"/js/guide/date","title":"Date","meta":{}},{"path":"/js/guide/debounce","title":"防抖","meta":{}},{"path":"/js/guide/microtasks","title":"microtasks","meta":{}},{"path":"/js/guide/module","title":"模块化","meta":{}},{"path":"/js/guide/string","title":"String","meta":{}},{"path":"/js/guide/throttle","title":"节流","meta":{}},{"path":"/js/guide/types","title":"类型","meta":{}},{"path":"/js/guide/utils","title":"工具函数","meta":{}}]},{"title":"异步","path":"/jsasync","meta":{},"children":[{"path":"/jsasync/promise","title":"Promise","meta":{}}]}],"/tools":[{"path":"/tools/map","title":"地图","meta":{}},{"path":"/tools/online","title":"在线工具","meta":{}},{"path":"/tools/typescript","title":"TypeScript","meta":{}}]}},"locales":[],"navs":{"*":[{"title":"HTML","path":"/html","order":1},{"title":"CSS","path":"/css","order":20},{"title":"设计模式","path":"/design-patterns","order":30},{"path":"/js","title":"Js"},{"path":"/tools","title":"Tools"}]},"title":"橙柚","logo":"https://cy-picgo.oss-cn-hangzhou.aliyuncs.com/desktop.jpg","mode":"site"},
       ...props,
     }),
     "routes": [
@@ -529,6 +544,42 @@ const routes = [
           "slugs": []
         },
         "title": "自适应"
+      },
+      {
+        "path": "/css/user-experience/dimming",
+        "component": require('/Users/laiguolin/Workspace/notebook/notebook/docs/css/user-experience/dimming/index.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/css/user-experience/dimming/index.md",
+          "updatedTime": null,
+          "title": "弱化背景",
+          "nav": {
+            "title": "CSS",
+            "path": "/css"
+          },
+          "group": {
+            "title": "用户体验",
+            "path": "/css/user-experience"
+          },
+          "slugs": [
+            {
+              "depth": 2,
+              "value": "HTML 元素",
+              "heading": "html-元素"
+            },
+            {
+              "depth": 2,
+              "value": "伪元素",
+              "heading": "伪元素"
+            },
+            {
+              "depth": 2,
+              "value": "box-shadow",
+              "heading": "box-shadow"
+            }
+          ]
+        },
+        "title": "弱化背景"
       },
       {
         "path": "/css/user-experience/scrolling",
@@ -1681,7 +1732,7 @@ const routes = [
         "path": "/css/user-experience",
         "meta": {},
         "exact": true,
-        "redirect": "/css/user-experience/scrolling"
+        "redirect": "/css/user-experience/dimming"
       },
       {
         "path": "/design-patterns/creation",
